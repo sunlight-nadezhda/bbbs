@@ -16,7 +16,8 @@ export default class Menu {
     }
     
     _toggleClassList() {
-      this._menuSettings.menu.classList.toggle('header__overlay');
+      document.querySelector('.header').classList.toggle('header__overlay');
+      // this._menuSettings.menu.classList.toggle('header__overlay');
       this._menuSettings.menu.classList.toggle('header__item_active');
       this._menuSettings.closeButton.classList.toggle('header__item_active');
       this._menuSettings.menuButton.classList.toggle('header__item_inactive');
