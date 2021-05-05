@@ -1,4 +1,4 @@
-.click {
+.clickable-element {
   font-family: 'Proto-Grotesk-Ligth-Web', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -9,12 +9,12 @@
   color: var(--color-blue);
 }
 
-.click:hover {
+.clickable-element:hover {
   color: var(--color-dark);
 }
 
 @media screen and (max-width: 1024px) {
-  .click {
+  .clickable-element {
     font-size: 12px;
     line-height: 17px;
   }
