@@ -1,6 +1,57 @@
 .circle {
   width: 78px;
   height: 78px;
-  background-color: var(--color-blue);
+  border: 1px solid #000;
+  background-color: transparent;
   border-radius: 50%;
+}
+
+.circle_color_blue {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+.circle_color_dark {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
+.circle_color_dark-grey {
+  background-color: var(--color-dark-grey);
+  border-color: var(--color-dark-grey);
+}
+
+.circle_color_light-grey {
+  background-color: var(--color-light-grey);
+  border-color: var(--color-light-grey);
+}
+
+.circle_color_light-blue {
+  background-color: var(--color-light-blue);
+  border-color: var(--color-light-blue);
+}
+
+.circle_color_orange {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+.circle_color_yellow {
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+}
+
+.circle_color_green {
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.circle_color_error {
+  background-color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.circle_color_background {
+  background-color: var(--color-background);
+  border-color: var(--color-background);
 }

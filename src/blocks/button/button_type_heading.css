@@ -1,0 +1,14 @@
+.button_type_heading {
+  background-color: var(--color-background);
+  border-radius: 15px;
+  border: none;
+  padding: 2px 7px;
+  text-transform: uppercase;
+  color: var(--color-dark-grey);
+  letter-spacing: 1px;
+  font-family: "PTRootUIWebRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: calc(13 / 10);
+}

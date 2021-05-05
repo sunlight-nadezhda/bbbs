@@ -4,5 +4,7 @@
 @import url('../blocks/page/page.css');
 @import url('../blocks/button/button.css');
 @import url('../blocks/button/button_inactive.css');
+@import url('../blocks/button/button_type_heading.css');
 
+@import url('../blocks/circle/color-circles.css');
 @import url('../blocks/circle/circle.css');
