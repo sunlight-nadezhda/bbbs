@@ -6,7 +6,7 @@
   text-transform: uppercase;
   color: var(--color-dark-grey);
   letter-spacing: 1px;
-  font-family: "PTRootUIWebRegular";
+  font-family: 'PTRootUIWebRegular', Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;

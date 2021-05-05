@@ -6,7 +6,7 @@
   background-color: transparent;
   padding: 10px 20px;
   color: var(--color-blue);
-  font-family: "Proto-Grotesk-Ligth-Web";
+  font-family: 'Proto-Grotesk-Ligth-Web', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
