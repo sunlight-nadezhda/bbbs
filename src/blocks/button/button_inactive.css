@@ -1,0 +1,17 @@
+.button_inactive {
+  border: 1px solid #000;
+  color: #000;
+}
+
+.button_inactive:hover {
+  background-color: var(--color-light-grey);
+}
+
+.button_inactive:active {
+  background-color: #000;
+}
+
+.button_inactive:visited:active {
+  border-color: #000;
+  background-color: #000;
+}
