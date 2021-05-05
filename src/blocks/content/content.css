@@ -2,7 +2,6 @@
 }
 
 .content_inactive {
-  display: none;
   position: relative;
   z-index: -1;
 }
