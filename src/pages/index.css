@@ -2,5 +2,14 @@
 @import url('../vendor/fonts/fonts.css');
 
 @import url('../blocks/page/page.css');
+<<<<<<< HEAD
 @import url('../blocks/header/header.css');
 @import url('../blocks/content/content.css');
+=======
+@import url('../blocks/button/button.css');
+@import url('../blocks/button/button_inactive.css');
+@import url('../blocks/button/button_type_heading.css');
+
+@import url('../blocks/circle/color-circles.css');
+@import url('../blocks/circle/circle.css');
+>>>>>>> fa0bece760e178682a2f4909bef253f4c2efa47b
