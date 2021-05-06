@@ -1,0 +1,120 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  max-width: 570px;
+  min-height: 414px;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.calendar_active {
+  background-color: var(--color-light-blue);
+}
+
+.calendar__top-container {
+  width: 100%;
+  margin: 0;
+  justify-content: space-between;
+  display: flex;
+}
+
+.calendar__members {
+  margin: 0;
+}
+
+.calendar__date {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.calendar__title-container {
+  width: 100%;
+  margin: 0;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar__title {
+  max-width: 320px;
+}
+
+.calendar__number {
+}
+
+.calendar__info-container {
+  width: 100%;
+  margin: 0;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar__info-item {
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+.calendar__info-item:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin: 0;
+}
+
+.calendar__bottom-container {
+  width: 100%;
+  margin: 0;
+  padding-top: 30px;
+  display: flex;
+  align-items: baseline;
+}
+
+.calendar__places {
+  padding-left: 15px;
+}
+
+.calendar__places_inactive {
+  display: none;
+}
+
+.calendar__sing-up-button {
+  width: 127px;
+}
+
+.calendar__full-view-button {
+  margin-left: auto;
+  background-image: url("../images/etc.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .calendar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .calendar__title-container {
+    padding-top: 5px;
+  }
+  .calendar__info-item {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+  .calendar__full-view-button {
+    width: 40px;
+    height: 40px;
+  }
+  .calendar__places {
+    padding-left: 10px;
+  }
+  .calendar__sing-up-button {
+    width: 100px;
+  }
+}
