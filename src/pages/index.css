@@ -26,6 +26,9 @@
 @import url('../blocks/guide-title.css');
 @import url('../blocks/guide-subtitle.css');
 @import url('../blocks/clickable-header.css');
+@import url('../blocks/text-cut.css');
+
+@import url('../blocks/video-card.css');
 
 @import url('../blocks/smile-block.css');
 @import url('../blocks/smile.css');
