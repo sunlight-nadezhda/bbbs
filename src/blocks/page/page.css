@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1320px) {
   .page__container {
     padding: 0 127px;
   }
@@ -39,18 +39,4 @@
   .page__container {
     padding: 0 15px;
   }
-}
-
-.page__link {
-  text-decoration: none;
-  cursor: pointer;
-  transition: opacity .15s ease-in-out;
-}
-
-.page__link:hover {
-  opacity: 0.6;
-}
-
-.page__link_active {
-  color: var(--color-blue);
 }

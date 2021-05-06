@@ -6,5 +6,9 @@
   letter-spacing: 0.2px;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 0;
+  color: #000;
+}
+
+.menu-text:active {
+  color: var(--color-blue);
 }
