@@ -21,10 +21,12 @@
 @import url('../blocks/title.css');
 @import url('../blocks/description.css');
 @import url('../blocks/clickable-element.css');
+@import url('../blocks/caption.css');
 @import url('../blocks/guide-title.css');
 @import url('../blocks/guide-subtitle.css');
 @import url('../blocks/clickable-header.css');
 
+@import url('../blocks/smile-block.css');
 @import url('../blocks/smile.css');
 
 @import url('../blocks/footer.css');

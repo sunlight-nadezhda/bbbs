@@ -33,7 +33,7 @@
 .footer__logo {
   width: 415px;
   height: 76px;
-  background-image: url(../../images/logo_footer.svg);
+  background-image: url(../images/logo_footer.svg);
   background-size: contain;
   background-repeat: no-repeat;
   grid-area: logo;

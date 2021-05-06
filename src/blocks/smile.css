@@ -5,46 +5,31 @@
   height: 26px;
 }
 
-.smile-block {
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
+.smile__good {
+  background-image: url('../images/good-inactive.svg');
 }
 
-.smile-row {
-  display: flex;
-  gap: 15px;
+.smile__good_active {
+  background-image: url('../images/good.svg');
 }
 
-.smile-row__smile {
-  margin-right: 15px;
+.smile__ok {
+  background-image: url('../images/ok-inactive.svg');
 }
 
-.smile-good {
-  background-image: url('../../images/good-inactive.svg');
+.smile__ok_active {
+  background-image: url('../images/ok.svg');
 }
 
-.smile-good_active {
-  background-image: url('../../images/good.svg');
+.smile__bad {
+  background-image: url('../images/bad-inactive.svg');
 }
 
-.smile-ok {
-  background-image: url('../../images/ok-inactive.svg');
+.smile__bad_active {
+  background-image: url('../images/bad.svg');
 }
 
-.smile-ok_active {
-  background-image: url('../../images/ok.svg');
-}
-
-.smile-bad {
-  background-image: url('../../images/bad-inactive.svg');
-}
-
-.smile-bad_active {
-  background-image: url('../../images/bad.svg');
-}
-
-.smile-text {
+.smile__text {
   font-family: 'PTRootUIWebRegular', Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -55,14 +40,14 @@
   align-self: center;
 }
 
-.smile-text_type_good {
+.smile__text_type_good {
   color: var(--color-green);
 }
 
-.smile-text_type_ok{
+.smile__text_type_ok{
   color: var(--color-dark-grey);
 }
 
-.smile-text_type_bad {
+.smile__text_type_bad {
   color: var(--color-orange);
 }

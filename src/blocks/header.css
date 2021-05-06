@@ -46,7 +46,7 @@
   background-position: center;
   width: 183px;
   min-height: 30px;
-  mask-image: url("../../images/logo.svg");
+  mask-image: url("../images/logo.svg");
 }
 
 .header__logo:active {
@@ -115,21 +115,21 @@
 
 .header__button_type_close {
   display: none;
-  background-image: url("../../images/close.svg");
+  background-image: url("../images/close.svg");
 }
 
 .header__button_type_menu {
   display: none;
-  background-image: url("../../images/menu.svg");
+  background-image: url("../images/menu.svg");
 }
 
 .header__button_type_personal-account {
-  background-image: url("../../images/personal-account.svg");
+  background-image: url("../images/personal-account.svg");
   margin-left: 20px;
 }
 
 .header__button_type_search {
-  background-image: url("../../images/search.svg");
+  background-image: url("../images/search.svg");
 }
 
 @media screen and (min-width: 1920px) {
@@ -157,7 +157,7 @@
   }
 
   .header__button_type_personal-account:active {
-    background-image: url("../../images/personal-account-active.svg");
+    background-image: url("../images/personal-account-active.svg");
   }
 
   .header__button_type_menu {
@@ -215,7 +215,7 @@
     margin-left: 20px;
     width: 130px;
     min-height: 20px;
-    mask-image: url("../../images/logo-mini.svg");
+    mask-image: url("../images/logo-mini.svg");
   }
 }
 
