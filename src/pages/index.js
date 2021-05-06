@@ -4,3 +4,6 @@ import {menuSettings} from '../scripts/utils/utils.js';
 
 const menu = new Menu(menuSettings);
 menu.setEventListeners();
+
+
+

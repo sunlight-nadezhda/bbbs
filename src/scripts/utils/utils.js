@@ -1,4 +1,5 @@
 const menuSettings = {
+    header: document.querySelector('.header'),
     menuButton: document.querySelector('.header__button_type_menu'),
     closeButton: document.querySelector('.header__button_type_close'),
     menu: document.querySelector('.header__menu'),

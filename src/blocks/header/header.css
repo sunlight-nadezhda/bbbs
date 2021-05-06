@@ -6,21 +6,24 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position:fixed;
-  top: 0;
-  left: 0;
   box-sizing: border-box;
   width: 100%;
-  background-color:#fff;
+  background-color:rgba(255,255,255,1);
+  top: -80px;
+  transition: top ease-in-out 1s;
 }
 
-.header.out {
-	transform: translateY(-100%);
+.header_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.9);
 }
+
 
 .header__overlay {
   position: fixed;
-  background-color:#fff;
+  background-color: rgba(255,255,255,.9);
   border-radius: 0 0 30px 30px;
   left: 0;
   top: 0;
