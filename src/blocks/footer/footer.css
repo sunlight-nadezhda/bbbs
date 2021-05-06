@@ -62,6 +62,7 @@
   height: 48px;
   background-color: var(--color-dark);
   color: var(--color-background);
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
