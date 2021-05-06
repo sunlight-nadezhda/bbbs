@@ -1,31 +1,35 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts/fonts.css');
 
-@import url('../blocks/page/page.css');
-@import url('../blocks/header/header.css');
-@import url('../blocks/content/content.css');
-@import url('../blocks/button/button.css');
-@import url('../blocks/button/button_inactive.css');
-@import url('../blocks/button/button_type_heading.css');
-@import url('../blocks/button/button-arrow.css');
-@import url('../blocks/button/button-close.css');
+@import url('../blocks/page.css');
+@import url('../blocks/header.css');
+@import url('../blocks/content.css');
+@import url('../blocks/button.css');
+@import url('../blocks/button_inactive.css');
+@import url('../blocks/button_type_heading.css');
+@import url('../blocks/button-arrow.css');
+@import url('../blocks/button-close.css');
 
-@import url('../blocks/circle/color-circles.css');
-@import url('../blocks/circle/circle.css');
-
-@import url('../blocks/menu-text/menu-text.css');
-@import url('../blocks/tag/tag.css');
-@import url('../blocks/number/number.css');
-@import url('../blocks/page-title/page-title.css');
-@import url('../blocks/subtitle/subtitle.css');
-@import url('../blocks/title/title.css');
-@import url('../blocks/description/description.css');
-@import url('../blocks/clickable-element/clickable-element.css');
-@import url('../blocks/title/guide-title.css');
-@import url('../blocks/subtitle/guide-subtitle.css');
-@import url('../blocks/clickable-element/clickable-header.css');
-@import url('../blocks/caption/caption.css');
+@import url('../blocks/color-circles.css');
+@import url('../blocks/circle.css');
 
 @import url('../blocks/smile/smile.css');
 
 @import url('../blocks/calendar/calendar.css');
+@import url('../blocks/menu-text.css');
+@import url('../blocks/tag.css');
+@import url('../blocks/number.css');
+@import url('../blocks/page-title.css');
+@import url('../blocks/subtitle.css');
+@import url('../blocks/title.css');
+@import url('../blocks/description.css');
+@import url('../blocks/clickable-element.css');
+@import url('../blocks/caption.css');
+@import url('../blocks/guide-title.css');
+@import url('../blocks/guide-subtitle.css');
+@import url('../blocks/clickable-header.css');
+
+@import url('../blocks/smile-block.css');
+@import url('../blocks/smile.css');
+
+@import url('../blocks/footer.css');
