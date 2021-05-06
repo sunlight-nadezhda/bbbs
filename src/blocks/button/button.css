@@ -10,9 +10,10 @@
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  line-height: calc(19 / 15);
+  line-height: 1.26;
   letter-spacing: 0.2px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button:hover {
