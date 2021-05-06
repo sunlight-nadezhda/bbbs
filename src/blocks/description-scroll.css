@@ -1,0 +1,45 @@
+.description-scroll {
+  max-width: 420px;
+  max-height: 222px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.description-scroll__container {
+  padding: 30px;
+}
+
+@media screen and (max-width:425px) {
+  .description-scroll__container {
+    padding: 30px 15px;
+  }
+}
+
+.description-scroll__caption {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.description-scroll__text {
+  display: block;
+  max-width: 360px;
+  max-height: 133px;
+  overflow-y: scroll;
+}
+
+.description-scroll__text::-webkit-scrollbar-thumb {
+  height: 30px;
+  border-radius: 5px;
+  background: #E8E6E6;
+}
+
+.description-scroll__text::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+@media screen and (max-width: 425px) {
+  .description-scroll__text::-webkit-scrollbar {
+    width: 3px;
+  }
+}
