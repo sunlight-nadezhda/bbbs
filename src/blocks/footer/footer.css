@@ -12,7 +12,7 @@
 
 .footer__container {
   display: grid;
-  max-width: 1160px;
+  max-width: 1200px;
   margin: auto;
   grid-template-columns: repeat(3, minmax(min-content, max-content));
   grid-template-rows: repeat(2, minmax(min-content, max-content));
@@ -25,7 +25,7 @@
 @media (max-width: 1024px) {
   .footer__container {
     grid-template-columns: 1fr;
-    grid-template-areas: "logo" "navigation" "button" "copyright";
+    grid-template-areas: "logo" "nav" "button" "copyright";
     justify-items: center;
   }
 }
@@ -49,11 +49,11 @@
 
 .footer__button-donate {
   grid-area: button;
-  font-family: 'Proto Grotesk Web Light';
+  font-family: 'Proto-Grotesk-Ligth-Web', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
-  line-height: 17px;
+  font-size: 15px;
+  line-height: 19px;
   letter-spacing: 0.2px;
   border: 1px solid var(--color-background);
   box-sizing: border-box;
@@ -65,18 +65,12 @@
 }
 
 @media (max-width: 1024px) {
-  .footer__donate-button {
+  .footer__button-donate {
     margin: 31px 0 31px;
     width: 134px;
     height: 40px;
-  }
-}
-
-@media (max-width: 320px) {
-  .footer__donate-button {
-    margin: 13px 0 31px;
-    width: 134px;
-    height: 40px;
+    font-size: 12px;
+    line-height: 17px;
   }
 }
 
@@ -157,8 +151,6 @@
   grid-area: nav;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
 }
 
 @media (max-width: 1024px) {
@@ -173,7 +165,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  min-width: 160px;
 }
 
 .footer__menu:last-child {
@@ -199,6 +190,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  row-gap: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -206,7 +198,9 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    min-width: 100%;
+    column-gap: 15px;
+    row-gap: 18px;
+    align-self: center;
   }
 }
 
@@ -217,30 +211,16 @@
 }
 
 .footer__menu-item {
+  font-family: "Proto-Grotesk-Ligth-Web";
   text-transform: uppercase;
   text-decoration: none;
-  margin: 20px 0 0;
-  font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.2px;
 }
 
-@media (max-width: 1024px) {
-  .footer__menu-item {
-    margin: 0 15px 0 0;
-  }
-  .footer__menu-item:last-child {
-    margin: 0;
-  }
-}
-
-@media (max-width: 320px) {
-  .footer__menu-item {
-    margin: 0 15px 18px 0;
-  }
-  .footer__menu-item:nth-of-type(2n) {
-    margin: 0;
-  }
+.footer__menu-link {
+  color: var(--color-background);
+  text-decoration: none;
 }
