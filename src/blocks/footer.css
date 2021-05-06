@@ -6,13 +6,13 @@
 
 @media (max-width: 1024px) {
   .footer {
-    padding: 40px 0 30px;
+    padding: 40px 15px 30px;
   }
 }
 
 .footer__container {
   display: grid;
-  max-width: 1200px;
+  max-width: 1156px;
   margin: auto;
   grid-template-columns: repeat(3, minmax(min-content, max-content));
   grid-template-rows: repeat(2, minmax(min-content, max-content));
@@ -24,6 +24,7 @@
 
 @media (max-width: 1024px) {
   .footer__container {
+    max-width: 763px;
     grid-template-columns: 1fr;
     grid-template-areas: "logo" "nav" "button" "copyright";
     justify-items: center;
