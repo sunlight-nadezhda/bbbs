@@ -13,9 +13,7 @@
 @import url('../blocks/color-circles.css');
 @import url('../blocks/circle.css');
 
-@import url('../blocks/smile/smile.css');
-
-@import url('../blocks/calendar/calendar.css');
+@import url('../blocks/calendar.css');
 @import url('../blocks/menu-text.css');
 @import url('../blocks/tag.css');
 @import url('../blocks/number.css');
