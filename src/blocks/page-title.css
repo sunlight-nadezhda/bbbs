@@ -2,13 +2,13 @@
   font-family: 'Proto-Grotesk-Ligth-Web', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 74px;
-  line-height: 80px;
+  line-height: 1.08;
   margin: 0;
 }
 
 @media screen and (max-width: 1024px) {
   .page-title {
     font-size: 37px;
-    line-height: 39px;
+    line-height: 1.05;
   }
 }

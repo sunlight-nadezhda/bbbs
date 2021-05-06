@@ -6,13 +6,13 @@
 
 @media (max-width: 1024px) {
   .footer {
-    padding: 40px 0 30px;
+    padding: 40px 15px 30px;
   }
 }
 
 .footer__container {
   display: grid;
-  max-width: 1200px;
+  max-width: 1156px;
   margin: auto;
   grid-template-columns: repeat(3, minmax(min-content, max-content));
   grid-template-rows: repeat(2, minmax(min-content, max-content));
@@ -24,6 +24,7 @@
 
 @media (max-width: 1024px) {
   .footer__container {
+    max-width: 763px;
     grid-template-columns: 1fr;
     grid-template-areas: "logo" "nav" "button" "copyright";
     justify-items: center;
@@ -53,7 +54,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  line-height: 19px;
+  line-height: 1.27;
   letter-spacing: 0.2px;
   border: 1px solid var(--color-background);
   box-sizing: border-box;
@@ -72,7 +73,7 @@
     width: 134px;
     height: 40px;
     font-size: 12px;
-    line-height: 17px;
+    line-height: 1.42;
   }
 }
 
@@ -124,14 +125,14 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.44;
   color: var(--color-background);
 }
 
 @media (max-width: 1024px) {
   .footer__copyright {
     font-size: 12px;
-    line-height: 17px;
+    line-height: 1.42;
     letter-spacing: 0.2px;
     margin: 0 30px 0 0;
   }
@@ -228,7 +229,7 @@
   text-decoration: none;
   font-weight: 300;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   letter-spacing: 0.2px;
 }
 

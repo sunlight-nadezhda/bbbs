@@ -81,10 +81,6 @@
   display: none;
 }
 
-.calendar__sing-up-button {
-  width: 127px;
-}
-
 .calendar__full-view-button {
   margin-left: auto;
   background-image: url("../images/etc.svg");

@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 44px;
-  line-height: 50px;
+  line-height: 1.14;
   color: var(--color-blue);
   cursor: pointer;
 }

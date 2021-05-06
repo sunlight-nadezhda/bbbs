@@ -2,7 +2,7 @@
   font-family: 'Proto-Grotesk-Ligth-Web', Helvetica, sans-serif;
   font-weight: 300;
   font-size: 15px;
-  line-height: 19px;
+  line-height: 1.27;
   letter-spacing: 0.2px;
   text-decoration: none;
   margin: 0;
@@ -16,6 +16,6 @@
 @media screen and (max-width: 1024px) {
   .clickable-element {
     font-size: 12px;
-    line-height: 17px;
+    line-height: 1.42;
   }
 }
