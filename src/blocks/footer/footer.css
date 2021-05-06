@@ -63,6 +63,7 @@
   background-color: var(--color-dark);
   color: var(--color-background);
   cursor: pointer;
+  transition: color 0.3s ease-in-out;
 }
 
 @media (max-width: 1024px) {
@@ -73,6 +74,11 @@
     font-size: 12px;
     line-height: 17px;
   }
+}
+
+.footer__button-donate:hover {
+  color: var(--color-light-blue);
+  border-color: var(--color-light-blue);
 }
 
 .footer__copyright-container {
@@ -146,6 +152,11 @@
 
 .footer__copyright-link {
   color: var(--color-background);
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__copyright-link:hover {
+  color: var(--color-light-blue);
 }
 
 .footer__menu-container {
@@ -224,4 +235,9 @@
 .footer__menu-link {
   color: var(--color-background);
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__menu-link:hover {
+  color: var(--color-light-blue);
 }
