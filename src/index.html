@@ -106,7 +106,7 @@
       <button
         type="button"
         aria-label="Закрыть"
-        class="header__button header__button_type_close"
+        class="button-close header__button-close"
       ></button>
     </header>
 
@@ -434,22 +434,24 @@
 
       <div class="popup popup_type_login">
         <div class="popup__container popup__container_form">
-          <h2 class="popup__title">Редактировать профиль</h2>
-          <button type="button" aria-label="Закрыть" class="popup__btn-close"></button>
-          <form class="popup__form" name="form-edit-profile" novalidate>
+          <button type="button" aria-label="Закрыть" class="button-close popup__btn-close"></button>
+          <h2 class="popup__title title">Вход</h2>
+          <div class="popup__description-container">
+            <p class="popup__description description">Вход в личный кабинет доступен наставникам программы «Старшие Братья Старшие Сёстры».</p>
+            <p class="popup__description description">Пожалуйста, введите логин и пароль из письма. Если вам не приходило письмо, свяжитесь с вашим куратором.</p>
+          </div>
+          <form class="popup__form" name="form-login" novalidate>
             <fieldset class="popup__set">
             <label class="popup__field">
-              <input type="text" name="name" placeholder="Имя" class="popup__input popup__input_type_name" required minlength="2" maxlength="40">
-              <span class="popup__input-error popup__input-error_type_name"></span>
+              <input type="text" name="login" placeholder="Логин" class="popup__input caption" required minlength="2" maxlength="40">
             </label>
       
             <label class="popup__field">
-              <input type="text" name="about" placeholder="О себе" class="popup__input popup__input_type_about" required minlength="2" maxlength="200">
-              <span class="popup__input-error popup__input-error_type_about"></span>
+              <input type="password" name="password" placeholder="Пароль" class="popup__input caption" required minlength="8" maxlength="40">
             </label>
             </fieldset>
-      
-            <button type="submit" class="popup__btn-submit">Сохранить</button>
+            <p class="caption popup__caption">Забыли пароль?</p>
+            <button type="submit" class="button popup__btn-submit">Войти</button>
       
           </form>
         </div>

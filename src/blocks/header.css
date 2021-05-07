@@ -113,9 +113,8 @@
   min-height: 22px;
 }
 
-.header__button_type_close {
+.header__button-close {
   display: none;
-  background-image: url("../images/close.svg");
 }
 
 .header__button_type_menu {
@@ -195,7 +194,7 @@
     margin-bottom: 0;
   }
 
-  .header__button_type_close {
+  .header__button-close {
     margin-left: auto;
   }
 
