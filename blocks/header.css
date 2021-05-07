@@ -13,6 +13,11 @@
   transition: top ease-in-out 1s;
 }
 
+.header__index {
+  background-color: var(--color-background);
+  padding-top: 24px;
+}
+
 .header_fixed {
   position: fixed;
   top: 0;
