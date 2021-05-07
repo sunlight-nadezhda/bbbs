@@ -432,6 +432,29 @@
         </div>
       </div>
 
+      <div class="popup popup_type_login">
+        <div class="popup__container popup__container_form">
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <button type="button" aria-label="Закрыть" class="popup__btn-close"></button>
+          <form class="popup__form" name="form-edit-profile" novalidate>
+            <fieldset class="popup__set">
+            <label class="popup__field">
+              <input type="text" name="name" placeholder="Имя" class="popup__input popup__input_type_name" required minlength="2" maxlength="40">
+              <span class="popup__input-error popup__input-error_type_name"></span>
+            </label>
+      
+            <label class="popup__field">
+              <input type="text" name="about" placeholder="О себе" class="popup__input popup__input_type_about" required minlength="2" maxlength="200">
+              <span class="popup__input-error popup__input-error_type_about"></span>
+            </label>
+            </fieldset>
+      
+            <button type="submit" class="popup__btn-submit">Сохранить</button>
+      
+          </form>
+        </div>
+      </div>
+
     </main>
 
     <footer class="footer page__container">
