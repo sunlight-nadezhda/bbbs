@@ -13,6 +13,11 @@
   transition: top ease-in-out 1s;
 }
 
+.header_place_index {
+  background-color: var(--color-background);
+  padding-top: 24px;
+}
+
 .header_fixed {
   position: fixed;
   top: 0;
@@ -42,11 +47,12 @@
 .header__logo {
   display: flex;
   background-repeat: no-repeat;
-  background-color: var(--color-blue);
+  /* background-color: var(--color-blue); */
   background-position: center;
   width: 183px;
   min-height: 30px;
-  mask-image: url("../images/logo.svg");
+  /* mask-image: image(url("../images/logo.svg"), var(--color-blue)); */
+  background-image: url("../images/logo.svg");
 }
 
 .header__logo:active {
@@ -113,9 +119,8 @@
   min-height: 22px;
 }
 
-.header__button_type_close {
+.header__button-close {
   display: none;
-  background-image: url("../images/close.svg");
 }
 
 .header__button_type_menu {
@@ -195,7 +200,7 @@
     margin-bottom: 0;
   }
 
-  .header__button_type_close {
+  .header__button-close {
     margin-left: auto;
   }
 

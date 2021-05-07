@@ -1,0 +1,11 @@
+.content {
+  padding: 64px 0 120px;
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+}
+
+.content_inactive {
+  position: relative;
+  z-index: -1;
+}

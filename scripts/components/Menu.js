@@ -11,6 +11,9 @@ export default class Menu {
   }
 
   _handleCloseMenu() {
+    console.log(this);
+    if (!this._menuSettings.header.classList.contains("header__overlay")) return;
+
     this._toggleClassList();
     this._menuSettings.closeButton.removeEventListener(
       "click",
@@ -62,6 +65,9 @@ export default class Menu {
     this._menuSettings.menuButton.addEventListener("click",
       this._handleViewMenu.bind(this)
     );
+
+    this._menuSettings.personalAccountButton.addEventListener("mouseup", this._handleCloseMenu.bind(this));
+
     window.addEventListener("resize", this._closeColumnMenu.bind(this));
     document.addEventListener("scroll", this._showFixedMenu.bind(this));
   }

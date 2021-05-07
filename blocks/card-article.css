@@ -1,0 +1,240 @@
+.card-article {
+  border-radius: 30px;
+  text-align: center;
+  max-width: 870px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-article_color_yellow {
+  background-color: var(--color-yellow);
+}
+
+.card-article_color_green {
+  background-color: var(--color-green);
+}
+
+.card-article_color_light-blue {
+  background-color: var(--color-light-blue);
+}
+
+.card-article_color_orange {
+  background-color: var(--color-orange);
+}
+
+.card-article_size_l {
+  max-width: 1770px;
+}
+
+@media screen and (max-width: 425px) {
+  .card-article_size_l {
+    max-width: 290px;
+  }
+}
+
+.card-article_size_m {
+  max-width: 1185px;
+}
+
+@media screen and (max-width: 1440px) {
+  .card-article_size_m {
+    max-width: 585px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article_size_m {
+    max-width: 770px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-article_size_m {
+    max-width: 290px;
+  }
+}
+
+.card-article_size_s {
+  max-width: 570px;
+}
+
+@media screen and (max-width: 1440px) {
+  .card-article_size_s {
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-article_size_s {
+    max-width: 290px;
+  }
+}
+
+.card-article__text_size_l {
+  max-width: 970px;
+  padding-bottom: 71px;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article__text_size_l {
+    max-width: 690px;
+    padding-bottom: 66px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-article__text_size_l {
+    max-width: 260px;
+    padding-bottom: 66px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-article__text_size_l {
+    padding-bottom: 66px;
+  }
+}
+
+.card-article__text_size_m {
+  padding-bottom: 38px;
+  padding-top: 18px;
+}
+
+@media screen and (max-width: 1440px) {
+  .card-article__text_size_m {
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article__text_size_m {
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-article__text_size_m {
+    padding-bottom: 8px;
+    padding-top: 5px;
+  }
+}
+
+.card-article__title_size_m {
+  padding-bottom: 5px;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article__title_size_m {
+    max-height: 46px;
+  }
+}
+
+.card-article__title_size_s {
+  padding-bottom: 5px;
+  max-height: 88px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article__title_size_s {
+    max-height: 64px;
+  }
+}
+
+.card-article__text_size_s {
+  padding-bottom: 71px;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 1440px) {
+  .card-article__text_size_s {
+    padding-bottom: 41px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article__text_size_s {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-article__text_size_s {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article__title_size_l {
+    font-size: 19px;
+    line-height: 23px;
+  }
+}
+
+.card-article__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-article__content_size_l {
+  padding: 120px 100px 30px 100px;
+}
+
+@media screen and (max-width: 425px) {
+  .card-article__content_size_l {
+    padding: 30px 15px 15px 15px;
+  }
+}
+
+.card-article__content_size_m {
+  padding: 15px 30px 30px 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article__content_size_m {
+    padding: 15px 30px 15px 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-article__content_size_m {
+    padding: 15px;
+  }
+}
+
+.card-article__content_size_s {
+  padding: 15px 30px 15px 30px;
+}
+
+@media screen and (max-width: 425px) {
+  .card-article__content_size_s {
+    padding: 10px 15px 15px 15px;
+  }
+}
+
+.card-article__image {
+  display: block;
+  border-radius: 15px;
+  padding: 30px 0 15px;
+  max-width: 100%;
+  object-fit: cover;
+  height: 394px;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article__image {
+    height: 346px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-article__image {
+    height: 142px;
+  }
+}
