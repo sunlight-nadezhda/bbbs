@@ -40,12 +40,13 @@
   width: 100%;
   display: flex;
   text-align: center;
+  align-items: center;
   height: 38px;
   padding-bottom: 15px;
   overflow: hidden;
 }
 
-.video-card__conteinter {
+.video-card__containter {
   display: flex;
   justify-content: center;
   align-items: center;

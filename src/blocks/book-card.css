@@ -1,0 +1,111 @@
+.book-card {
+  /* width: 100%; */
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* border-radius: calc(10 / 420 * 100%); */
+  overflow: hidden;
+}
+
+.book-card__book-container {
+  width: 100%;
+  height: 380px;
+  padding: 30px 90px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: grey;
+}
+
+.book-card__book {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-orange);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.book-card__title {
+  text-align: center;
+  height: 203px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.book-card__line {
+  border: 1px solid #000;
+  width: 66.67px;
+  text-align: center;
+  margin: auto 0 0 0;
+}
+
+.book-card__caption-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin:0;
+}
+
+.book-card__caption {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  height: 77px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.book-card__year {
+  text-align: center;
+  width: 100%;
+}
+
+.book-card__description {
+  width: 100%;
+  height: 222px;
+  padding: 30px;
+  background-color: grey;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .book-card {
+    width: 290px;
+  }
+
+  .book-card__book-container {
+    padding-left: 45px;
+    padding-right: 45px;
+    height: 332px;
+  }
+
+  .book-card__line {
+    border: 0.5px solid #000;
+    width: 60px;
+  }
+  .book-card__description {
+    height: 188px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .book-card__title {
+    height: 165px;
+  }
+
+  .book-card__caption {
+    height: 66px;
+  }
+}
