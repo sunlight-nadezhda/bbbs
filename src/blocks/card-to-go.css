@@ -1,0 +1,43 @@
+.card-to-go {
+  background-color: var(--color-green);
+  border-radius: 30px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .card-to-go {
+    background-color: var(--color-light-blue);
+    max-width: 290px;
+  }
+}
+
+.card-to-go__title {
+  margin: 5px 0 8px;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 425px) {
+  .card-to-go__title {
+    height: 69px;
+    margin-bottom: 5px;
+  }
+}
+
+.card-to-go__content {
+  margin-bottom: 39px;
+  max-width: 360px;
+}
+
+@media screen and (max-width: 425px) {
+  .card-to-go__content {
+    margin-bottom: 16px;
+    max-width: 260px;
+  }
+}
