@@ -42,11 +42,12 @@
 .header__logo {
   display: flex;
   background-repeat: no-repeat;
-  background-color: var(--color-blue);
+  /* background-color: var(--color-blue); */
   background-position: center;
   width: 183px;
   min-height: 30px;
-  mask-image: url("../images/logo.svg");
+  /* mask-image: image(url("../images/logo.svg"), var(--color-blue)); */
+  background-image: url("../images/logo.svg");
 }
 
 .header__logo:active {
