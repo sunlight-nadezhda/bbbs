@@ -1,6 +1,6 @@
 .block-article {
     display: flex;
-    padding-top: 30px;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1440px) {
