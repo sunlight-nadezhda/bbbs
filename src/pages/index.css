@@ -29,7 +29,6 @@
 @import url('../blocks/text-cut.css');
 
 @import url('../blocks/video-card.css');
-@import url('../blocks/book-card.css');
 
 @import url('../blocks/smile-block.css');
 @import url('../blocks/smile.css');
@@ -37,5 +36,7 @@
 
 @import url('../blocks/card-to-go.css');
 @import url('../blocks/description-scroll.css');
+
+@import url('../blocks/book-card.css');
 
 @import url('../blocks/footer.css');
