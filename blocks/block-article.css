@@ -1,0 +1,10 @@
+.block-article {
+    display: flex;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 1440px) {
+    .block-article {
+        flex-direction: column;
+    }
+}

@@ -13,7 +13,7 @@
   transition: top ease-in-out 1s;
 }
 
-.header__index {
+.header_place_index {
   background-color: var(--color-background);
   padding-top: 24px;
 }
