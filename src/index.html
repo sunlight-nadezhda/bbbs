@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BBBS</title>
+    <title>BBBS - главная (не авторизованы)</title>
   </head>
 
   <body class="page">
@@ -87,11 +87,14 @@
         </ul>
       </nav>
       <div class="header__container">
-        <button
+        <a
+          href="search.html"
           type="button"
           aria-label="Поиск"
           class="header__button header__button_type_search"
-        ></button>
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a>
         <div class="header__line"></div>
         <button
           type="button"
@@ -112,7 +115,6 @@
     </header>
 
     <main class="content page__container">
-
       <section class="two-columns two-columns_place_index">
         <div class="logo-inAuth">
           <div class="logo-inAuth__logo-block">
@@ -132,11 +134,11 @@
       </section>
 
       <section class="block-article">
-        <article
-          class="card-article card-article_color_yellow"
-        >
+        <article class="card-article card-article_color_yellow">
           <div class="card-article__content card-article__content_size_m">
-            <span class="button button_type_heading card-article__select">выбор наставника</span>
+            <span class="button button_type_heading card-article__select"
+              >выбор наставника</span
+            >
             <div class="card-article__text card-article__text_size_m">
               <h2 class="title card-article__title_size_m">
                 Сплав на байдарках в две строки
@@ -148,7 +150,9 @@
               src="<%=require('./images/photo_two-girls.jpg')%>"
               alt="#"
             />
-            <a class="clickable-element card-article__link" href="#">перейти на сайт</a>
+            <a class="clickable-element card-article__link" href="#"
+              >перейти на сайт</a
+            >
           </div>
         </article>
         <div class="description-scroll">
@@ -180,8 +184,7 @@
         </div>
       </section>
 
-      <article
-        class="card-article card-article_color_light-blue">
+      <article class="card-article card-article_color_light-blue">
         <div class="card-article__content card-article__content_size_l">
           <div class="card-article__text card-article__text_size_l">
             <h2 class="subtitle card-article__text card-article__title_size_l">
@@ -232,11 +235,9 @@
               <div class="video-card__category">Рубрика</div>
               <div class="video-card__category">Рубрика</div>
             </div>
-            <h2 class="title video-card__title">
-                Жизнь Кабачка
-            </h2>
+            <h2 class="title video-card__title">Жизнь Кабачка</h2>
             <p class="video-card__caption caption">
-                Клод Баррас, мультфильм, Швейцария, Франция, 2016
+              Клод Баррас, мультфильм, Швейцария, Франция, 2016
             </p>
             <a
               class="clickable-element"
@@ -258,11 +259,9 @@
               <div class="video-card__category">Рубрика</div>
               <div class="video-card__category">Рубрика</div>
             </div>
-            <h2 class="title video-card__title">
-                Волчок
-            </h2>
+            <h2 class="title video-card__title">Волчок</h2>
             <p class="video-card__caption caption">
-                Василий Сигарев, Россия, 2009 год
+              Василий Сигарев, Россия, 2009 год
             </p>
             <a
               class="clickable-element"
@@ -316,19 +315,36 @@
 
       <section class="widget-section">
         <div>
-          <iframe class="widget" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBigBrothers.BigSisters.Russia&tabs=timeline&width=420&height=627&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="420" height="627" style="border:none;overflow:hidden" scrolling="no" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe
+            class="widget"
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBigBrothers.BigSisters.Russia&tabs=timeline&width=420&height=627&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+            width="420"
+            height="627"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
         <div class="widget-section__container">
           <div class="widget-section__item">
-            <h2 class="title widget-section__question ">Я боюсь, что ребёнок ко мне слишком сильно привяжется. Что делать?</h2>
+            <h2 class="title widget-section__question">
+              Я боюсь, что ребёнок ко мне слишком сильно привяжется. Что делать?
+            </h2>
             <p class="guide-subtitle">рубрика</p>
           </div>
           <div class="widget-section__item">
-            <h2 class="title widget-section__question ">Возможно ли продлить срок участия в программе, если и я и мой «младший» хотим остаться в программе?</h2>
+            <h2 class="title widget-section__question">
+              Возможно ли продлить срок участия в программе, если и я и мой
+              «младший» хотим остаться в программе?
+            </h2>
             <p class="guide-subtitle">рубрика</p>
           </div>
           <div class="widget-section__item">
-            <h2 class="title widget-section__question ">Что делать если Ваш младший решил закрыть пару, т.к. слишком занят с учебой и друзьями?</h2>
+            <h2 class="title widget-section__question">
+              Что делать если Ваш младший решил закрыть пару, т.к. слишком занят
+              с учебой и друзьями?
+            </h2>
             <p class="guide-subtitle">рубрика</p>
           </div>
         </div>
