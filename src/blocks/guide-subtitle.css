@@ -13,3 +13,8 @@
 .guide-subtitle:hover {
   color: var(--color-dark);
 }
+
+.guide-subtitle_place_search {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

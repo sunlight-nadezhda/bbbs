@@ -1,0 +1,28 @@
+.search-result {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 30vw;
+  margin-right: 14vw;
+
+}
+
+.search-result__item {
+  border-bottom: .5px solid var(--color-light-grey);
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 55vw;
+}
+
+@media screen and (max-width: 1320px) {
+  .search-result {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 81vw;
+  }
+
+  .search-result__item {
+    padding-top: 10px;
+    width: 100%;
+  }
+}

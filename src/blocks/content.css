@@ -6,6 +6,11 @@
   justify-content: center;
 }
 
+.content_place_search {
+  padding-top: 29px;
+  min-height: calc(100vh - 56px);
+}
+
 .content_inactive {
   position: relative;
   z-index: -1;

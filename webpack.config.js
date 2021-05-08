@@ -55,6 +55,10 @@ module.exports = {
       template: './src/uikit.html',
       filename: 'uikit.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: 'search.html'
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
