@@ -1,3 +1,4 @@
+import './index.css';
 import Menu from "../scripts/components/Menu.js";
 import { menuSettings, popupLogin } from "../scripts/utils/utils.js";
 
