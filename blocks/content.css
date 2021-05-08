@@ -1,5 +1,6 @@
 .content {
-  padding: 64px 0 120px;
+  padding-top: 64px;
+  padding-bottom: 120px;
   display: grid;
   gap: 30px;
   justify-content: center;
