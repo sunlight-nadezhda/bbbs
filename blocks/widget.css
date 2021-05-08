@@ -1,0 +1,37 @@
+.widget {
+  width: 420px;
+  height: 627px;
+  border-radius: 30px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1919px) {
+  .widget {
+    width: 370px;
+  }
+  .widget__iframe {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .widget {
+    height: 552px;
+  }
+  .widget__iframe {
+    height: 552px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .widget {
+    width: 290px;
+    height: 433px;
+  }
+  .widget__iframe {
+    width: 290px;
+    height: 433px;
+  }
+}

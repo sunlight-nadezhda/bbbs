@@ -46,4 +46,7 @@
 @import url('../blocks/card-article.css');
 @import url('../blocks/four-columns.css');
 
+@import url('../blocks/widget-section.css');
+@import url('../blocks/widget.css');
+
 @import url('../blocks/footer.css');

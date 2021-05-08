@@ -1,0 +1,33 @@
+.widget-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+}
+
+.widget-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 30px;
+  margin: 0;
+  width: 100%;
+}
+
+.widget-section__item {
+  padding: 50px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 189px;
+}
+
+.widget-section__question {
+  max-width: 770px;
+  padding-bottom: 10px;
+}
+
+.widget-section__caption {
+}
