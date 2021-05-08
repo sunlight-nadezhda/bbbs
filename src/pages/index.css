@@ -41,9 +41,12 @@
 
 @import url('../blocks/popup.css');
 @import url('../blocks/two-columns.css');
-@import url('../blocks/history.css');
+@import url('../blocks/story.css');
 @import url('../blocks/block-article.css');
 @import url('../blocks/card-article.css');
 @import url('../blocks/four-columns.css');
+
+@import url('../blocks/widget-section.css');
+@import url('../blocks/widget.css');
 
 @import url('../blocks/footer.css');

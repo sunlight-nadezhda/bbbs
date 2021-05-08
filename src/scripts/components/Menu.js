@@ -11,7 +11,6 @@ export default class Menu {
   }
 
   _handleCloseMenu() {
-    console.log(this);
     if (!this._menuSettings.header.classList.contains("header__overlay")) return;
 
     this._toggleClassList();

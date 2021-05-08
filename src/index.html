@@ -112,31 +112,31 @@
     </header>
 
     <main class="content page__container">
-      <div class="two-columns two-columns_place_index">
+
+      <section class="two-columns two-columns_place_index">
         <div class="logo-inAuth">
           <div class="logo-inAuth__logo-block">
             <div class="logo-inAuth__logo"></div>
           </div>
           <div class="logo-inAuth__about">
-            <p class="logo-inAuth__text">
+            <p class="title logo-inAuth__text">
               Наставники.про – цифоровая информационная платформа огрганизации
               «Старшие Братья Старшие Сестры». Созданная для поддержки
               наставников программы.
             </p>
           </div>
         </div>
-
-        <div class="history">
-          <a class="history__link" href="#">История Марины и Алины</a>
+        <div class="story">
+          <a class="title story__link" href="#">История Марины и Алины</a>
         </div>
-      </div>
+      </section>
 
-      <div class="block-article">
+      <section class="block-article">
         <article
-          class="card-article card-article_size_m card-article_color_yellow"
+          class="card-article card-article_color_yellow"
         >
           <div class="card-article__content card-article__content_size_m">
-            <span class="button button_type_heading">выбор наставника</span>
+            <span class="button button_type_heading card-article__select">выбор наставника</span>
             <div class="card-article__text card-article__text_size_m">
               <h2 class="title card-article__title_size_m">
                 Сплав на байдарках в две строки
@@ -148,7 +148,7 @@
               src="<%=require('./images/photo_two-girls.jpg')%>"
               alt="#"
             />
-            <a class="clickable-element" href="#">перейти на сайт</a>
+            <a class="clickable-element card-article__link" href="#">перейти на сайт</a>
           </div>
         </article>
         <div class="description-scroll">
@@ -178,14 +178,13 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       <article
-        class="card-article card-article_size_l card-article_color_light-blue"
-      >
+        class="card-article card-article_color_light-blue">
         <div class="card-article__content card-article__content_size_l">
           <div class="card-article__text card-article__text_size_l">
-            <h2 class="subtitle card-article__title_size_l">
+            <h2 class="subtitle card-article__text card-article__title_size_l">
               Развитие детей-сирот отличается от развития детей, живущих в
               семьях. Все этапы развития у детей-сирот проходят с искажениями и
               имеют ряд негативных особенностей.
@@ -301,6 +300,26 @@
           </div>
         </li>
       </ul>
+
+      <section class="widget-section">
+        <div>
+          <iframe class="widget" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBigBrothers.BigSisters.Russia&tabs=timeline&width=420&height=627&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="420" height="627" style="border:none;overflow:hidden" scrolling="no" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="widget-section__container">
+          <div class="widget-section__item">
+            <h2 class="title widget-section__question ">Я боюсь, что ребёнок ко мне слишком сильно привяжется. Что делать?</h2>
+            <p class="guide-subtitle">рубрика</p>
+          </div>
+          <div class="widget-section__item">
+            <h2 class="title widget-section__question ">Возможно ли продлить срок участия в программе, если и я и мой «младший» хотим остаться в программе?</h2>
+            <p class="guide-subtitle">рубрика</p>
+          </div>
+          <div class="widget-section__item">
+            <h2 class="title widget-section__question ">Что делать если Ваш младший решил закрыть пару, т.к. слишком занят с учебой и друзьями?</h2>
+            <p class="guide-subtitle">рубрика</p>
+          </div>
+        </div>
+      </section>
 
       <article
         class="card-article card-article_size_l card-article_color_green"

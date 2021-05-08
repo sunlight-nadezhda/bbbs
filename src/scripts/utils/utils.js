@@ -9,5 +9,6 @@ const menuSettings = {
 };
 
 const popupLogin = document.querySelector('.popup_type_login');
+const widgetSelector = document.querySelector('.widget');
 
-export {menuSettings, popupLogin};
+export {menuSettings, popupLogin, widgetSelector};

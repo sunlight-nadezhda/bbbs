@@ -22,13 +22,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255,.9);
+  background-color: var(--color-background);
+  opacity: 0.95;
 }
 
 
 .header__overlay {
   position: fixed;
-  background-color: rgba(255,255,255,.9);
+  background-color: var(--color-background);
+  opacity: 0.95;
   border-radius: 0 0 30px 30px;
   left: 0;
   top: 0;
@@ -137,13 +139,6 @@
   background-image: url("../images/search.svg");
 }
 
-@media screen and (min-width: 1920px) {
-  .header {
-    margin-left: calc((100vw - 1920px)/2);
-    margin-right: calc((100vw - 1920px)/2);
-  }
-}
-
 @media screen and (max-width: 1320px) {
   .header {
     padding-top: 30px;
@@ -220,7 +215,7 @@
     margin-left: 20px;
     width: 130px;
     min-height: 20px;
-    mask-image: url("../images/logo-mini.svg");
+    background-image: url("../images/logo-mini.svg");
   }
 }
 
