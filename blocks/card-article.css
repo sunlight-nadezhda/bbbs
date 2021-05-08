@@ -1,10 +1,20 @@
 .card-article {
   border-radius: 30px;
   text-align: center;
-  max-width: 870px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card-article__select {
+  opacity: 0.3;
+}
+
+.card-article__link {
+  margin-top: 15px;
 }
 
 .card-article_color_yellow {
@@ -21,38 +31,6 @@
 
 .card-article_color_orange {
   background-color: var(--color-orange);
-}
-
-.card-article_size_l {
-  max-width: 1770px;
-}
-
-@media screen and (max-width: 425px) {
-  .card-article_size_l {
-    max-width: 290px;
-  }
-}
-
-.card-article_size_m {
-  max-width: 1185px;
-}
-
-@media screen and (max-width: 1440px) {
-  .card-article_size_m {
-    max-width: 585px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .card-article_size_m {
-    max-width: 770px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .card-article_size_m {
-    max-width: 290px;
-  }
 }
 
 .card-article_size_s {
@@ -72,52 +50,40 @@
 }
 
 .card-article__text_size_l {
-  max-width: 970px;
+  width: 100%;
   padding-bottom: 71px;
 }
 
 @media screen and (max-width: 1024px) {
   .card-article__text_size_l {
-    max-width: 690px;
-    padding-bottom: 66px;
+    padding-bottom: 181px;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .card-article__text_size_l {
-    max-width: 260px;
-    padding-bottom: 66px;
-  }
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 860px) {
   .card-article__text_size_l {
     padding-bottom: 66px;
   }
 }
 
 .card-article__text_size_m {
-  padding-bottom: 38px;
-  padding-top: 18px;
+  padding-bottom: 70px;
+  padding-top: 15px;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 1440px) {
-  .card-article__text_size_m {
-    padding-bottom: 10px;
-    padding-top: 15px;
-  }
-}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   .card-article__text_size_m {
-    padding-bottom: 10px;
+    padding-bottom: 60px;
     padding-top: 5px;
+    box-sizing: border-box;
   }
 }
 
 @media screen and (max-width: 425px) {
   .card-article__text_size_m {
-    padding-bottom: 8px;
+    padding-bottom: 37px;
     padding-top: 5px;
   }
 }
@@ -128,7 +94,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   .card-article__title_size_m {
     max-height: 46px;
   }
@@ -169,36 +135,43 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .card-article__title_size_l {
-    font-size: 19px;
-    line-height: 23px;
-  }
-}
-
 .card-article__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card-article__content_size_l {
-  padding: 120px 100px 30px 100px;
+  padding: 120px 400px 30px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1440px) {
   .card-article__content_size_l {
-    padding: 30px 15px 15px 15px;
+    padding: 120px 100px 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-article__content_size_l {
+    padding: 30px 40px 15px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .card-article__content_size_l {
+    padding: 30px 15px 15px;
   }
 }
 
 .card-article__content_size_m {
-  padding: 15px 30px 30px 30px;
+  padding: 15px 30px 30px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   .card-article__content_size_m {
-    padding: 15px 30px 15px 30px;
+    padding: 15px 30px 15px;
   }
 }
 
@@ -209,31 +182,32 @@
 }
 
 .card-article__content_size_s {
-  padding: 15px 30px 15px 30px;
+  padding: 15px 30px 15px;
 }
 
 @media screen and (max-width: 425px) {
   .card-article__content_size_s {
-    padding: 10px 15px 15px 15px;
+    padding: 10px 15px 15px;
   }
 }
 
 .card-article__image {
   display: block;
   border-radius: 15px;
-  padding: 30px 0 15px;
-  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
   object-fit: cover;
   height: 394px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   .card-article__image {
     height: 346px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 860px) {
   .card-article__image {
     height: 142px;
   }

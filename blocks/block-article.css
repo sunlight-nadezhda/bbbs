@@ -1,10 +1,20 @@
 .block-article {
-    display: flex;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 585px;
+  grid-template-rows: 629px;
+  justify-content: center;
 }
 
-@media screen and (max-width: 1440px) {
-    .block-article {
-        flex-direction: column;
-    }
+@media screen and (max-width: 1400px) {
+  .block-article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 537px 188px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .block-article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 333px 188px;
+  }
 }

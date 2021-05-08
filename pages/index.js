@@ -1,8 +1,12 @@
 import Menu from "../scripts/components/Menu.js";
-import { menuSettings, popupLogin } from "../scripts/utils/utils.js";
+import Widget from "../scripts/components/Widget.js";
+import { menuSettings, popupLogin, widgetSelector } from "../scripts/utils/utils.js";
 
 const menu = new Menu(menuSettings);
 menu.setEventListeners();
+
+const widget = new Widget(widgetSelector);
+widget.setEventListeners();
 
 
 //Работа с попапом регистрации

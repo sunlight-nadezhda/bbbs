@@ -1,8 +1,43 @@
 .four-columns {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 420px);
+  grid-template-rows: 420px;
+  column-gap: 30px;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1910px) {
+  .four-columns {
+    grid-template-columns: repeat(3, 370px);
+  }
+}
+
+@media screen and (max-width: 1435px) {
+  .four-columns {
+    grid-template-columns: repeat(2, 370px);
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .four-columns {
+    grid-template-columns: repeat(2, 290px);
+    grid-template-rows: 358px;
+  }
+}
+
+
+@media screen and (max-width: 860px) {
+  .four-columns {
+    grid-template-columns: repeat(1, 370px);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .four-columns {
+    grid-template-columns: repeat(1, 290px);
+  }
 }
