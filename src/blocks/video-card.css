@@ -18,7 +18,7 @@
   padding: 15px 40px;
   justify-content: space-between;
   align-items: center;
-  min-height: 169px;
+  height: 169px;
   background-color: #fff;
   box-sizing: border-box;
   position: relative;
@@ -80,6 +80,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .video-card__description {
+    height: 147px;
+  }
+}
+
 
 @media screen and (max-width: 860px) {
   .video-card:nth-child(n+2) {
@@ -87,8 +93,9 @@
   }
 
   .video-card__image {
-    height: 165px;
+    height: 163px;
   }
+
 }
 
 @media screen and (max-width: 460px) {

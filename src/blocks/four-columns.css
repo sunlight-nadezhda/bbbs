@@ -13,6 +13,7 @@
 @media screen and (max-width: 1910px) {
   .four-columns {
     grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 380px;
   }
 }
 
@@ -32,12 +33,13 @@
 
 @media screen and (max-width: 860px) {
   .four-columns {
-    grid-template-columns: repeat(1, 370px);
+    grid-template-columns: 370px;
+    grid-template-rows: 310px;
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 400px) {
   .four-columns {
-    grid-template-columns: repeat(1, 290px);
+    grid-template-columns: 1fr;
   }
 }

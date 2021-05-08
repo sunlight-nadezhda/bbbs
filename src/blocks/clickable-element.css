@@ -7,6 +7,7 @@
   text-decoration: none;
   margin: 0;
   color: var(--color-blue);
+  cursor: pointer;
 }
 
 .clickable-element:hover {
