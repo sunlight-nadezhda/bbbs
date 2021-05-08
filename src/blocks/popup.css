@@ -147,24 +147,14 @@
   border-color: var(--color-light-grey);
 }
 
-
-.page__container {
-  margin: 0 auto;
-  padding: 0 75px;
-  max-width: 1920px;
-  background-color: var(--color-background);
-  box-sizing: border-box;
-}
-
 @media screen and (max-width:1440px) {
   .popup__container_video {
     width: calc(100vw - 270px);
     height: 789px;
-    /* max-height: 90%; */
+    max-height: 95vh;
   }
   .popup__video-item {
     height: 625px;
-    /* max-height: calc(60% - 164px); */
   }
 }
 

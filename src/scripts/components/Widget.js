@@ -22,7 +22,7 @@ export default class Widget {
 
   _resizeWidget() {
     if (this._mediaQueryFull.matches) {
-      this._setSizeOfWidget(420, 670);
+      this._setSizeOfWidget(420, 627);
     }
 
     if (this._mediaQueryWide.matches) {
