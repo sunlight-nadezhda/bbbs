@@ -160,6 +160,11 @@
   margin-left: 20px;
 }
 
+.header__button_type_personal-account-active {
+  background-image: url("../images/personal-account-active.svg");
+  margin-left: 20px;
+}
+
 .header__button_type_search {
   background-image: url("../images/search.svg");
 }
@@ -196,7 +201,7 @@
   }
 
   .header__button_type_personal-account-active {
-    background-image: url("../images/personal-account-active.svg");
+    display: none;
   }
 
   .header__button_type_menu {
