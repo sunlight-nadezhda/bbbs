@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1380px) {
   .title {
     font-size: 19px;
     line-height: 1.21;

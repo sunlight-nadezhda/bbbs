@@ -1,7 +1,8 @@
 import './index.css';
 import Menu from "../scripts/components/Menu.js";
 import Widget from "../scripts/components/Widget.js";
-import { menuSettings, popupLogin, popupVideo, popupCity, widgetSelector, videoBigCardSelector } from "../scripts/utils/utils.js";
+import { menuSettings, popupLogin, popupVideo, popupCity, popupConfirm,
+   popupCalendar, popupSuccess, widgetSelector, videoBigCardSelector } from "../scripts/utils/utils.js";
 
 const menu = new Menu(menuSettings);
 menu.setEventListeners();
@@ -28,15 +29,37 @@ function handleChangeCity() {
 }
 
 function closePopup(evt) {
+  evt.target.closest(".popup").classList.remove("popup_opened");
+}
+
+function doSomething(evt) {
   if (evt.target.classList.contains('popup__btn-close') ||
       evt.target.classList.contains('popup')) {
-    evt.target.closest(".popup").classList.remove("popup_opened");
+        closePopup(evt);
   }
+  if (evt.target.classList.contains('calendar__full-view-button')) {
+    openPopup(popupCalendar);
+  }
+
+  if (evt.target.classList.contains('button_singup')) {
+    if (document.querySelector('.popup_opened')) {
+      document.querySelector('.popup_opened').classList.remove('popup_opened');
+    }
+    openPopup(popupConfirm);
+  }
+
+  if (evt.target.classList.contains('popup__btn-confirm')) {
+    document.querySelector('.popup_opened').classList.remove('popup_opened');
+    openPopup(popupSuccess);
+  }
+
 }
 
 
 //Слушатели
 menuSettings.personalAccountButton.addEventListener("click", handleRegistration);
-videoBigCardSelector.addEventListener('click', handleViewVideo);
+if(videoBigCardSelector) {
+  videoBigCardSelector.addEventListener('click', handleViewVideo);
+}
 menuSettings.changeCity.addEventListener('click', handleChangeCity);
-document.addEventListener("click", closePopup);
+document.addEventListener("click", doSomething);

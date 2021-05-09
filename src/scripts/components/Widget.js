@@ -39,6 +39,8 @@ export default class Widget {
   }
 
   setEventListeners() {
-    window.addEventListener("resize", this._resizeWidget.bind(this));
+    if(this._widgetElement) {
+      window.addEventListener("resize", this._resizeWidget.bind(this));
+    }
   }
 }

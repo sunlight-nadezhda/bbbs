@@ -10,6 +10,11 @@
   border-radius: 30px;
 }
 
+.calendar_type_popup {
+  border-radius: 0;
+  padding: 0;
+}
+
 .calendar_active {
   background-color: var(--color-light-blue);
 }
