@@ -232,7 +232,7 @@
     position: absolute;
     top: 50px;
     left: 0;
-    width: 81vw;
+    width: calc(100vw - 2 * 127px);
   }
 
   .header__button-close {
@@ -242,6 +242,12 @@
   .header__button_type_close::after {
     content: "";
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header__search {
+    width: calc(100vw - 2 * 15px);
   }
 }
 
