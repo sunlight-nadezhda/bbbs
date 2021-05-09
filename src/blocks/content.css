@@ -5,6 +5,11 @@
   gap: 30px;
 }
 
+.content__search-result {
+  margin-left: auto;
+  margin-right: 75px;
+}
+
 .content_place_search {
   padding-top: 29px;
   min-height: calc(100vh - 56px);
@@ -32,5 +37,11 @@
   .content {
     padding-top: 10px;
     padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .content_place_search {
+    padding-top: 30px;
   }
 }
