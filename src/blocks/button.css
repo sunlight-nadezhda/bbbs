@@ -36,6 +36,11 @@
   background-color: var(--color-blue);
 }
 
+.button_active {
+  background-color: var(--color-blue);
+  color: #fff;
+}
+
 @media screen and (max-width: 1024px) {
   .button {
     padding: 10px 15px;
