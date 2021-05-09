@@ -9,6 +9,8 @@ const menuSettings = {
 };
 
 const popupLogin = document.querySelector('.popup_type_login');
+const popupVideo = document.querySelector('.popup_type_video');
 const widgetSelector = document.querySelector('.widget');
+const videoBigCardSelector = document.querySelector('.video-bigcard__link');
 
-export {menuSettings, popupLogin, widgetSelector};
+export {menuSettings, popupLogin, popupVideo, widgetSelector, videoBigCardSelector};
