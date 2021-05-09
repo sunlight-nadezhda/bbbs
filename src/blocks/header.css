@@ -195,7 +195,7 @@
     display: none;
   }
 
-  .header__button_type_personal-account:active {
+  .header__button_type_personal-account-active {
     background-image: url("../images/personal-account-active.svg");
   }
 
