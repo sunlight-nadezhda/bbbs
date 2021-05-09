@@ -10,7 +10,7 @@
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 640px) {
   .calendar-grid {
     grid-template-columns: repeat(1, 1fr);
   }

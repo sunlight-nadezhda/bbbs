@@ -34,7 +34,8 @@ function closePopup(evt) {
 
 function doSomething(evt) {
   if (evt.target.classList.contains('popup__btn-close') ||
-      evt.target.classList.contains('popup')) {
+      evt.target.classList.contains('popup') ||
+      evt.target.classList.contains('popup__btn-return')) {
         closePopup(evt);
   }
   if (evt.target.classList.contains('calendar__full-view-button')) {
@@ -57,9 +58,14 @@ function doSomething(evt) {
 
 
 //Слушатели
-menuSettings.personalAccountButton.addEventListener("click", handleRegistration);
-if(videoBigCardSelector) {
+if (menuSettings.personalAccountButton) {
+  menuSettings.personalAccountButton.addEventListener("click", handleRegistration);
+}
+
+if (videoBigCardSelector) {
   videoBigCardSelector.addEventListener('click', handleViewVideo);
 }
-menuSettings.changeCity.addEventListener('click', handleChangeCity);
+if (menuSettings.changeCity) {
+  menuSettings.changeCity.addEventListener('click', handleChangeCity);
+}
 document.addEventListener("click", doSomething);

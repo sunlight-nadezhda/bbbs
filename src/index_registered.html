@@ -138,7 +138,7 @@
             </p>
           </div>
           <div class="calendar__bottom-container">
-            <button type="button" area-label="Записаться" class="button">
+            <button type="button" area-label="Записаться" class="button button_singup">
               Записаться
             </button>
             <p class="caption calendar__places calendar__places_active">
@@ -468,6 +468,97 @@
           <p class="caption popup__video-caption">
             Иван Рустаев, волонтер-наставник
           </p>
+        </div>
+      </div>
+
+      <div class="popup popup_type_calendar">
+        <div class="popup__container popup__container_form">
+          <button
+            type="button"
+            aria-label="Закрыть"
+            class="button-close popup__btn-close"
+          ></button>
+          
+          <div class="calendar calendar_type_popup">
+            <div class="calendar__top-container">
+              <p class="calendar__members caption">Волонтеры + дети</p>
+              <p class="calendar__date caption">декабрь / понедельник</p>
+            </div>
+            <div class="calendar__title-container">
+              <h2 class="calendar__title title">
+                Субботний meet up: учимся проходить интевью
+              </h2>
+              <p class="calendar__number number">28</p>
+            </div>
+            <div class="calendar__info-container">
+              <p class="calendar__info-item caption">12:00&ndash;14:00</p>
+              <p class="calendar__info-item caption">
+                Садовническая наб., д. 77 стр. 1 (офис компании Ernst&Young)
+              </p>
+              <p class="calendar__info-item caption">
+                Александра, +7 926 356-78-90
+              </p>
+            </div>
+            <p class="popup__description popup__description_type_calendar description">
+              Наконец-то наступила весна и мы пережили эту долгую зиму! 
+              И возможно, что внутренних сил и ресурса сейчас не так много, 
+              а до окончания учебного года ещё целых несколько месяцев. 
+              Поэтому приглашаем вас на встречу нашего ресурсного клуба "Наставник PRO", 
+              которую мы хотим посвятить теме поиска моральных сил, смыслов и внутреннего
+               ресурса для общения и взаимодействия с нашими подопечными. 
+            </p>
+            <div class="calendar__bottom-container">
+              <button type="button" area-label="Записаться" class="button button_singup">
+                Записаться
+              </button>
+              <p class="caption calendar__places calendar__places_active">
+                Осталось&nbsp;<span class="caption calendar__places-count">5</span
+                >&nbsp;мест
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup_type_confirm">
+        <div class="popup__container popup__container_form">
+          <button
+            type="button"
+            aria-label="Закрыть"
+            class="button-close popup__btn-close"
+          ></button>
+          <h2 class="popup__title popup__title_type_confirm title">
+            Подтвердить запись на мероприятие «Субботний meet up: учимся проходить интервью» 5 декабря с 12:00–14:00
+          </h2>
+          <div class="popup__bottom-container">
+            <button type="button" area-label="Записаться" class="button popup__btn-confirm">
+              Подтвердить запись
+            </button>
+            <button type="button" area-label="Записаться" class="button button_inactive">
+              Отменить
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup_type_success">
+        <div class="popup__container popup__container_form">
+          <button
+            type="button"
+            aria-label="Закрыть"
+            class="button-close popup__btn-close"
+          ></button>
+          <div class="popup__image-success"></div>
+          <div class="popup__description-container">
+            <p class="popup__description title">
+              Вы записаны на мероприятие «Субботний meet up: учимся проходить интервью» 5 декабря с 12:00–14:00.
+            <p class="popup__description title">
+              Если у вас не получится прийти — отмените, пожалуйста, запись.
+            </p>
+          </div>
+          <button type="button" area-label="Записаться" class="button button_inactive">
+            Вернуться к календарю
+          </button>
         </div>
       </div>
     </main>
