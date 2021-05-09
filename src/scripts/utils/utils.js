@@ -6,11 +6,14 @@ const menuSettings = {
     menuSocials: document.querySelector('.header__menu-socials'),
     personalAccountButton: document.querySelector('.header__button_type_personal-account'),
     content: document.querySelector('.content'),
+    changeCity: document.querySelector('.header__change-city')
 };
 
 const popupLogin = document.querySelector('.popup_type_login');
 const popupVideo = document.querySelector('.popup_type_video');
+const popupCity = document.querySelector('.popup_type_city');
 const widgetSelector = document.querySelector('.widget');
 const videoBigCardSelector = document.querySelector('.video-bigcard__link');
 
-export {menuSettings, popupLogin, popupVideo, widgetSelector, videoBigCardSelector};
+
+export {menuSettings, popupLogin, popupVideo, popupCity, widgetSelector, videoBigCardSelector};

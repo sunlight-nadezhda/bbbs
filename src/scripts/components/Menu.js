@@ -66,7 +66,7 @@ export default class Menu {
     );
 
     this._menuSettings.personalAccountButton.addEventListener("mouseup", this._handleCloseMenu.bind(this));
-
+    this._menuSettings.changeCity.addEventListener('mouseup', this._handleCloseMenu.bind(this));
     window.addEventListener("resize", this._closeColumnMenu.bind(this));
     document.addEventListener("scroll", this._showFixedMenu.bind(this));
   }
