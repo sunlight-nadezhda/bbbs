@@ -1,5 +1,5 @@
 .content {
-  padding-top: 80px;
+  padding-top: 150px;
   padding-bottom: 120px;
   display: grid;
   gap: 30px;
@@ -13,6 +13,12 @@
 .content_inactive {
   position: relative;
   z-index: -1;
+}
+
+@media screen and (max-width: 1320px) {
+  .content {
+    padding-top: 110px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
