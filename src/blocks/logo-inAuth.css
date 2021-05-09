@@ -21,6 +21,7 @@
   background-image: url(../images/logo_inAuth.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  display: block;
 }
 
 .logo-inAuth__about {
@@ -102,7 +103,7 @@
     height: 255px;
   }
 
-  
+
   .logo-inAuth__logo {
     margin-top: 0;
   }
