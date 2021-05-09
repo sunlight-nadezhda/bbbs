@@ -1,7 +1,7 @@
 import './index.css';
 import Menu from "../scripts/components/Menu.js";
 import Widget from "../scripts/components/Widget.js";
-import { menuSettings, popupLogin, popupVideo, widgetSelector, videoBigCardSelector } from "../scripts/utils/utils.js";
+import { menuSettings, popupLogin, popupVideo, popupCity, widgetSelector, videoBigCardSelector } from "../scripts/utils/utils.js";
 
 const menu = new Menu(menuSettings);
 menu.setEventListeners();
@@ -23,6 +23,10 @@ function handleViewVideo() {
   openPopup(popupVideo);
 }
 
+function handleChangeCity() {
+  openPopup(popupCity);
+}
+
 function closePopup(evt) {
   if (evt.target.classList.contains('popup__btn-close') ||
       evt.target.classList.contains('popup')) {
@@ -33,5 +37,6 @@ function closePopup(evt) {
 
 //Слушатели
 menuSettings.personalAccountButton.addEventListener("click", handleRegistration);
-videoBigCardSelector.addEventListener('click', handleViewVideo)
+videoBigCardSelector.addEventListener('click', handleViewVideo);
+menuSettings.changeCity.addEventListener('click', handleChangeCity);
 document.addEventListener("click", closePopup);

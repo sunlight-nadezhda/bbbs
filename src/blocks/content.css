@@ -1,5 +1,5 @@
 .content {
-  padding-top: 150px;
+  padding-top: 80px;
   padding-bottom: 120px;
   display: grid;
   gap: 30px;
@@ -28,18 +28,12 @@
 
 @media screen and (max-width: 1320px) {
   .content {
-    padding-top: 110px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .content {
     padding-top: 30px;
     padding-bottom: 100px;
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 380px) {
   .content {
     padding-top: 10px;
     padding-bottom: 50px;
@@ -48,6 +42,6 @@
 
 @media screen and (max-width: 380px) {
   .content_place_search {
-    padding-top: 30px;
+    padding-top: 21px;
   }
 }
