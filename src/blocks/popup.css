@@ -105,6 +105,7 @@
 
 .popup__city-caption {
   text-align: center;
+  cursor: pointer;
 }
 
 
