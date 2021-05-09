@@ -1,6 +1,4 @@
 .header {
-  /* padding-top: 40px; */
-  min-height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,11 +6,11 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   width: 100%;
-  /* background-color:rgba(255,255,255,1); */
   top: -80px;
   transition: top ease-in-out 1s;
   background-color: var(--color-background);
-  padding-top: 24px;
+  padding-top: 40px;
+  padding-bottom: 0;
 }
 
 /* .header_place_index { */
@@ -48,6 +46,7 @@
 
 .header__logo {
   display: flex;
+  align-items: center;
   background-repeat: no-repeat;
   /* background-color: var(--color-blue); */
   background-position: center;
@@ -101,7 +100,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 7px 0 0 0;
+  margin: 0;
 }
 
 .header__menu-link {
@@ -168,9 +168,14 @@
 
 @media screen and (max-width: 1320px) {
   .header {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    min-height: 50px;
+    padding-top: 45px;
+    padding-bottom: 15px;
+  }
+
+  .header__logo {
+    width: 130px;
+    min-height: 20px;
+    background-image: url("../images/logo-mini.svg");
   }
 
   .header__container {
@@ -193,9 +198,9 @@
 
   .header__menu {
     display: none;
-    padding: 50px 0;
+    padding: 25px 0;
     order: 1;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
   }
 
@@ -204,12 +209,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0;
+    padding-top: 0;
   }
 
   .header__menu-socials {
     list-style: none;
     display: flex;
-    padding: 0;
+    padding: 0 0 0 26px;
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -241,15 +247,11 @@
 
 @media screen and (max-width: 380px) {
   .header {
-    padding-top: 18px;
-    padding-bottom: 13px;
+    padding-top: 15px;
   }
 
-  .header__logo {
+  .header-logo {
     margin-left: 20px;
-    width: 130px;
-    min-height: 20px;
-    background-image: url("../images/logo-mini.svg");
   }
 }
 
@@ -258,6 +260,8 @@
     margin-left: 0;
   }
 }
+
+
 
 .header__item_active {
   display: flex;
