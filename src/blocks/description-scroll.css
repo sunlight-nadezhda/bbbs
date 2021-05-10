@@ -16,6 +16,7 @@
 }
 
 .description-scroll__container_place_about-page {
+  width: 600px;
   padding-top: 52px;
   padding-bottom: 52px;
   box-sizing: border-box;
@@ -63,7 +64,6 @@
 }
 
 .description-scroll__text_place_index {
-  /* max-width: 585px; */
   max-height: 629px;
 }
 
@@ -79,6 +79,7 @@
   .description-scroll__container_place_about-page {
     padding: 30px 15px;
     max-width: 570px;
+    width: 100%;
   }
   
 

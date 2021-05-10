@@ -1,0 +1,31 @@
+.outer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cube {
+    width: 600px;
+    background-color: red;
+    display:flex;
+  }
+  
+.circlenew {
+	border: 3px solid #000;
+	display: inline-block;
+	width: 32.203%;
+	text-align: center;
+	border-radius: 100%;
+	background: #cecece;
+}
+
+.circlenew-text {
+	display: block;
+	height: 0;
+	margin: 0;
+	padding: 50% 18.797%;
+}
+.circlenew-span{
+	display: block;
+	transform: translateY(-50%);
+}
