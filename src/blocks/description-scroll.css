@@ -4,6 +4,7 @@
   border-radius: 30px;
   background-color: #fff;
   box-sizing: border-box;
+  display: flex;
 }
 
 .description-scroll__container {
@@ -17,6 +18,7 @@
 .description-scroll__container_place_about-page {
   padding-top: 52px;
   padding-bottom: 52px;
+  box-sizing: border-box;
 }
 
 .description-scroll__caption {

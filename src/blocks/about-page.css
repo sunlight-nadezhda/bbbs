@@ -19,18 +19,23 @@
 }
 
 .about-page__card-article {
-    border-radius: 50%; 
-    padding-right: 100%;
+  border-radius: 50%;
+  display: flex;
+  width: 100%;
 }
 
 @media screen and (max-width: 1440px) {
-    .about-page__subtitle {
+  .about-page__subtitle {
     max-width: 1030px;
+  }
+  .about-page__card-article {
+    width: 370px;
+    justify-self: center;
   }
 }
 
 @media screen and (max-width: 1280px) {
-    .about-page__subtitle {
+  .about-page__subtitle {
     max-width: unset;
   }
 
@@ -44,5 +49,8 @@
   .about-page__logo {
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+  .about-page__card-article {
+    width: 290px;
   }
 }
