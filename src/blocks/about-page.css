@@ -46,6 +46,12 @@
   .about-page__subtitle {
     max-width: 1030px;
   }
+
+  .about-page__logo {
+    width: 252px;
+    height: 46px;
+  }
+
   .about-page__card-article {
     width: 370px;
     justify-self: center;
@@ -73,7 +79,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  
+
 }
 
 @media screen and (max-width: 680px) {
