@@ -1,0 +1,15 @@
+.guide-title {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Proto-Grotesk-Ligth-Web", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 1.14;
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.guide-title:hover {
+  color: var(--color-dark);
+}

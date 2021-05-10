@@ -1,0 +1,14 @@
+.description {
+  font-family: 'PTRootUIWebRegular', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44;
+  margin: 0;
+}
+
+@media screen and (max-width: 1380px) {
+  .description {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}

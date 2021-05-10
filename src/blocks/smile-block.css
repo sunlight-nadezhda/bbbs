@@ -1,0 +1,10 @@
+.smile-block {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.smile-block__row {
+  display: flex;
+  gap: 15px;
+}

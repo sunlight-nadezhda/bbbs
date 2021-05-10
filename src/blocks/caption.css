@@ -1,0 +1,15 @@
+.caption {
+  font-family: 'PTRootUIWebRegular', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .caption {
+    font-size: 12px;
+    line-height: 1.42;
+  }
+}

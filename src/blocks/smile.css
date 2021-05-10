@@ -1,0 +1,53 @@
+.smile {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
+}
+
+.smile__good {
+  background-image: url('../images/good-inactive.svg');
+}
+
+.smile__good_active {
+  background-image: url('../images/good.svg');
+}
+
+.smile__ok {
+  background-image: url('../images/ok-inactive.svg');
+}
+
+.smile__ok_active {
+  background-image: url('../images/ok.svg');
+}
+
+.smile__bad {
+  background-image: url('../images/bad-inactive.svg');
+}
+
+.smile__bad_active {
+  background-image: url('../images/bad.svg');
+}
+
+.smile__text {
+  font-family: 'PTRootUIWebRegular', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2px;
+  color: var(--color-light-grey);
+  align-self: center;
+}
+
+.smile__text_type_good {
+  color: var(--color-green);
+}
+
+.smile__text_type_ok{
+  color: var(--color-dark-grey);
+}
+
+.smile__text_type_bad {
+  color: var(--color-orange);
+}

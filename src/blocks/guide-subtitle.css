@@ -1,0 +1,20 @@
+.guide-subtitle {
+  margin: 0;
+  text-decoration: none;
+  font-family: "Proto-Grotesk-Ligth-Web", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.27;
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.guide-subtitle:hover {
+  color: var(--color-dark);
+}
+
+.guide-subtitle_place_search {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

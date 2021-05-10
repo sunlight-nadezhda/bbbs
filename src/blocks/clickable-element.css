@@ -1,0 +1,22 @@
+.clickable-element {
+  font-family: 'Proto-Grotesk-Ligth-Web', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.27;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  margin: 0;
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.clickable-element:hover {
+  color: var(--color-dark);
+}
+
+@media screen and (max-width: 1024px) {
+  .clickable-element {
+    font-size: 12px;
+    line-height: 1.42;
+  }
+}

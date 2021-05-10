@@ -1,0 +1,15 @@
+.number {
+  font-family: 'Proto-Grotesk-Ligth-Web', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .number {
+    font-size: 60px;
+  }
+}

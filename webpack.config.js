@@ -51,6 +51,26 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/index_registered.html',
+      filename: 'index_registered.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/uikit.html',
+      filename: 'uikit.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: 'search.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/calendar.html',
+      filename: 'calendar.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: 'about.html'
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'

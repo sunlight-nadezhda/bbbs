@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BBBS - главная</title>
+    <title>BBBS - главная (авторизованый пользователь)</title>
   </head>
 
   <body class="page">
     <header class="header header_place_index page__container">
-      <a class="page__link" href="./index_registered.html" target="_self">
+      <a class="page__link" href="./index.html" target="_self">
         <div class="header__logo"></div>
       </a>
 
@@ -87,7 +87,13 @@
             </li>
           </ul>
         </div>
-        <div class="header__bottom-container"></div>
+        <div class="header__bottom-container">
+          <div class="header__city-container">
+            <p class="description header__city">Москва</p>
+            <p class="description header__change-city">. Изменить город</p>
+          </div>
+          <p class="description header__exit">Выйти</p>
+        </div>
       </nav>
       <div class="header__container">
         <a
@@ -101,7 +107,7 @@
         <button
           type="button"
           aria-label="Личный кабинет"
-          class="header__button header__button_type_personal-account"
+          class="header__button header__button_type_personal-account header__button_type_personal-account-active"
         ></button>
       </div>
       <button
@@ -118,18 +124,46 @@
 
     <main class="content page__container">
       <section class="two-columns two-columns_place_index">
-        <div class="logo-inAuth">
-          <div class="logo-inAuth__logo-block">
-            <a href="about.html" class="logo-inAuth__logo" target="_self"></a>
+        <div class="calendar">
+          <div class="calendar__top-container">
+            <p class="calendar__members caption">Волонтеры + дети</p>
+            <p class="calendar__date caption">декабрь / понедельник</p>
           </div>
-          <div class="logo-inAuth__about">
-            <p class="title logo-inAuth__text">
-              Наставники.про – цифоровая информационная платформа огрганизации
-              «Старшие Братья Старшие Сестры». Созданная для поддержки
-              наставников программы.
+          <div class="calendar__title-container">
+            <h2 class="calendar__title title">
+              Субботний meet up: учимся проходить интевью
+            </h2>
+            <p class="calendar__number number">05</p>
+          </div>
+          <div class="calendar__info-container">
+            <p class="calendar__info-item caption">12:00&ndash;14:00</p>
+            <p class="calendar__info-item caption">
+              Садовническая наб., д. 77 стр. 1 (офис компании Ernst&Young)
+            </p>
+            <p class="calendar__info-item caption">
+              Александра, +7 926 356-78-90
             </p>
           </div>
+          <div class="calendar__bottom-container">
+            <button
+              type="button"
+              area-label="Записаться"
+              class="button button_singup"
+            >
+              Записаться
+            </button>
+            <p class="caption calendar__places calendar__places_active">
+              Осталось&nbsp;<span class="caption calendar__places-count">5</span
+              >&nbsp;мест
+            </p>
+            <button
+              type="button"
+              area-label="Полный вид"
+              class="button calendar__full-view-button"
+            ></button>
+          </div>
         </div>
+
         <div class="story">
           <a class="title story__link" href="#" target="_self"
             >История Марины и Алины</a
@@ -381,56 +415,28 @@
         </div>
       </article>
 
-      <div class="popup popup_type_login">
-        <div class="popup__container popup__container_form">
-          <button
-            type="button"
-            aria-label="Закрыть"
-            class="button-close popup__btn-close"
-          ></button>
-          <h2 class="popup__title title">Вход</h2>
-          <div class="popup__description-container">
-            <p class="popup__description description">
-              Вход в личный кабинет доступен наставникам программы «Старшие
-              Братья Старшие Сёстры».
-            </p>
-
-            <p class="popup__description description">
-              Пожалуйста, введите логин и пароль из письма. Если вам не
-              приходило письмо, свяжитесь с вашим куратором.
-            </p>
+      <div class="popup popup_type_city">
+        <div class="popup__container popup__container_city">
+          <h2 class="popup__city-title title">Выберите ваш город</h2>
+          <div class="popup__city-container">
+            <div class="popup__capitals">
+              <p class="caption popup__city-caption">Москва</p>
+              <p class="caption popup__city-caption">Санкт-Петербург</p>
+            </div>
+            <div class="popup__other-cities">
+              <p class="caption popup__city-caption">Алексин</p>
+              <p class="caption popup__city-caption">Барнаул</p>
+              <p class="caption popup__city-caption">Екатеринбург</p>
+              <p class="caption popup__city-caption">Зубцов</p>
+              <p class="caption popup__city-caption">Калининград</p>
+              <p class="caption popup__city-caption">Киреевск</p>
+              <p class="caption popup__city-caption">Коломна</p>
+              <p class="caption popup__city-caption">Новомосковск</p>
+              <p class="caption popup__city-caption">Орехово-Зуево</p>
+              <p class="caption popup__city-caption">Тверь</p>
+              <p class="caption popup__city-caption">Тула</p>
+            </div>
           </div>
-          <form class="popup__form" name="form-login" novalidate>
-            <fieldset class="popup__set">
-              <label class="popup__field">
-                <input
-                  type="text"
-                  name="login"
-                  placeholder="Логин"
-                  class="popup__input caption"
-                  required
-                  minlength="2"
-                  maxlength="40"
-                />
-              </label>
-
-              <label class="popup__field">
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Пароль"
-                  class="popup__input caption"
-                  required
-                  minlength="8"
-                  maxlength="40"
-                />
-              </label>
-            </fieldset>
-            <p class="caption popup__caption">Забыли пароль?</p>
-            <button type="submit" class="button popup__btn-submit">
-              Войти
-            </button>
-          </form>
         </div>
       </div>
 
@@ -451,6 +457,121 @@
           <p class="caption popup__video-caption">
             Иван Рустаев, волонтер-наставник
           </p>
+        </div>
+      </div>
+
+      <div class="popup popup_type_calendar">
+        <div class="popup__container popup__container_form">
+          <button
+            type="button"
+            aria-label="Закрыть"
+            class="button-close popup__btn-close"
+          ></button>
+
+          <div class="calendar calendar_type_popup">
+            <div class="calendar__top-container">
+              <p class="calendar__members caption">Волонтеры + дети</p>
+              <p class="calendar__date caption">декабрь / понедельник</p>
+            </div>
+            <div class="calendar__title-container">
+              <h2 class="calendar__title title">
+                Субботний meet up: учимся проходить интевью
+              </h2>
+              <p class="calendar__number number">28</p>
+            </div>
+            <div class="calendar__info-container">
+              <p class="calendar__info-item caption">12:00&ndash;14:00</p>
+              <p class="calendar__info-item caption">
+                Садовническая наб., д. 77 стр. 1 (офис компании Ernst&Young)
+              </p>
+              <p class="calendar__info-item caption">
+                Александра, +7 926 356-78-90
+              </p>
+            </div>
+            <p
+              class="popup__description popup__description_type_calendar description"
+            >
+              Наконец-то наступила весна и мы пережили эту долгую зиму! И
+              возможно, что внутренних сил и ресурса сейчас не так много, а до
+              окончания учебного года ещё целых несколько месяцев. Поэтому
+              приглашаем вас на встречу нашего ресурсного клуба "Наставник PRO",
+              которую мы хотим посвятить теме поиска моральных сил, смыслов и
+              внутреннего ресурса для общения и взаимодействия с нашими
+              подопечными.
+            </p>
+            <div class="calendar__bottom-container">
+              <button
+                type="button"
+                area-label="Записаться"
+                class="button button_singup"
+              >
+                Записаться
+              </button>
+              <p class="caption calendar__places calendar__places_active">
+                Осталось&nbsp;<span class="caption calendar__places-count"
+                  >5</span
+                >&nbsp;мест
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup_type_confirm">
+        <div class="popup__container popup__container_form">
+          <button
+            type="button"
+            aria-label="Закрыть"
+            class="button-close popup__btn-close"
+          ></button>
+          <h2 class="popup__title popup__title_type_confirm title">
+            Подтвердить запись на мероприятие «Субботний meet up: учимся
+            проходить интервью» 5 декабря с 12:00–14:00
+          </h2>
+          <div class="popup__bottom-container">
+            <button
+              type="button"
+              area-label="Записаться"
+              class="button popup__btn-confirm"
+            >
+              Подтвердить запись
+            </button>
+            <button
+              type="button"
+              area-label="Записаться"
+              class="button button_inactive"
+            >
+              Отменить
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup popup_type_success">
+        <div class="popup__container popup__container_form">
+          <button
+            type="button"
+            aria-label="Закрыть"
+            class="button-close popup__btn-close"
+          ></button>
+          <div class="popup__image-success"></div>
+          <div class="popup__description-container">
+            <p class="popup__description title">
+              Вы записаны на мероприятие «Субботний meet up: учимся проходить
+              интервью» 5 декабря с 12:00–14:00.
+            </p>
+
+            <p class="popup__description title">
+              Если у вас не получится прийти — отмените, пожалуйста, запись.
+            </p>
+          </div>
+          <button
+            type="button"
+            area-label="Записаться"
+            class="button button_inactive"
+          >
+            Вернуться к календарю
+          </button>
         </div>
       </div>
     </main>
