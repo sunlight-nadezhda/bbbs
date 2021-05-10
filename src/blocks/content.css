@@ -15,7 +15,7 @@
   min-height: calc(100vh - 56px);
 }
 
-.content_place_calendar {
+.content_type_column {
   display: flex;
   flex-direction: column;
   align-items: center;

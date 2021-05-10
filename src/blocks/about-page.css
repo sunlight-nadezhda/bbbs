@@ -1,0 +1,48 @@
+.about-page {
+}
+
+.about-page__subtitle {
+  max-width: 1170px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-page__logo {
+  width: 357px;
+  height: 65px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  background-image: url("../images/logo_inAuth.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.about-page__card-article {
+    border-radius: 50%; 
+    padding-right: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+    .about-page__subtitle {
+    max-width: 1030px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+    .about-page__subtitle {
+    max-width: unset;
+  }
+
+  .about-page__logo {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .about-page__logo {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}

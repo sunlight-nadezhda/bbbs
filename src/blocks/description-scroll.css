@@ -8,11 +8,15 @@
 
 .description-scroll__container {
   padding: 30px;
-
 }
 
 .description-scroll__container_place_index {
   padding: 47px 15px 69px 30px;
+}
+
+.description-scroll__container_place_about-page {
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
 
 .description-scroll__caption {
@@ -28,6 +32,14 @@
   display: flex;
   width: 100%;
   overflow-y: scroll;
+}
+
+.description-scroll__text_place_about-page {
+  padding-bottom: 25px;
+}
+
+.description-scroll__text_place_about-page:last-of-type {
+  padding-bottom: 0;
 }
 
 .description-scroll__text::-webkit-scrollbar-thumb {
@@ -60,6 +72,11 @@
   .description-scroll__container_place_index {
     padding: 30px 15px;
   }
+
+  .description-scroll__container_place_about-page {
+    padding: 30px 15px;
+  }
+  
 
   .description-scroll__text_place_index {
     max-height: 106px;

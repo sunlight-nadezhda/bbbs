@@ -5,6 +5,11 @@
   justify-content: center;
 }
 
+.block-article_type_about-page {
+  grid-template-columns: fit-content 600px;
+  grid-template-rows: unset;
+}
+
 @media screen and (max-width: 1400px) {
   .block-article {
     grid-template-columns: 1fr;
