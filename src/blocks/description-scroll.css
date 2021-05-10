@@ -38,6 +38,7 @@
 
 .description-scroll__text_place_about-page {
   padding-bottom: 25px;
+  overflow-y: unset;
 }
 
 .description-scroll__text_place_about-page:last-of-type {
@@ -66,7 +67,7 @@
   max-height: 629px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1420px) {
   .description-scroll__caption_place_index {
     margin-bottom: 5px;
   }
@@ -77,6 +78,7 @@
 
   .description-scroll__container_place_about-page {
     padding: 30px 15px;
+    max-width: 570px;
   }
   
 

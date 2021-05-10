@@ -8,6 +8,7 @@
 .block-article_type_about-page {
   grid-template-columns: 570px 600px;
   grid-template-rows: unset;
+  align-items: center;
 }
 
 @media screen and (max-width: 1400px) {
@@ -15,9 +16,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 537px 188px;
   }
-}
-
-@media screen and (max-width: 1440px) {
   .block-article_type_about-page {
     grid-template-columns: 1fr;
     grid-template-rows: 358px 1fr;

@@ -326,7 +326,7 @@
 
 @media screen and (min-width: 1920px) {
   .header_fixed {
-    left: calc(100vw - 1920px)
+    left: calc((100vw - 1920px)/2);
   }
 }
 

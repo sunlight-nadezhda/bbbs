@@ -13,7 +13,7 @@ widget.setEventListeners();
 
 //Работа с попапом регистрации
 function openPopup(ModalWindowForm) {
-  ModalWindowForm.classList.add("popup_opened");
+  if (ModalWindowForm) ModalWindowForm.classList.add("popup_opened");
 }
 
 function handleRegistration() {
