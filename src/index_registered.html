@@ -98,7 +98,6 @@
       <div class="header__container">
         <a
           href="search.html"
-          type="button"
           aria-label="Поиск"
           class="header__button header__button_type_search"
           target="_self"
@@ -123,7 +122,7 @@
     </header>
 
     <main class="content page__container">
-      <section class="two-columns two-columns_place_index">
+      <section class="two-columns two-columns_place_index" aria-label="Секция для авторизованного пользователя">
         <div class="calendar">
           <div class="calendar__top-container">
             <p class="calendar__members caption">Волонтеры + дети</p>
@@ -147,7 +146,6 @@
           <div class="calendar__bottom-container">
             <button
               type="button"
-              area-label="Записаться"
               class="button button_singup"
             >
               Записаться
@@ -158,7 +156,7 @@
             </p>
             <button
               type="button"
-              area-label="Полный вид"
+              aria-label="Полный вид"
               class="button calendar__full-view-button"
             ></button>
           </div>
@@ -171,7 +169,7 @@
         </div>
       </section>
 
-      <section class="block-article">
+      <section class="block-article" aria-label="Статья Сплав на байдарках в две строки">
         <article class="card-article card-article_color_yellow">
           <div class="card-article__content card-article__content_size_m">
             <span class="button button_type_heading card-article__select"
@@ -370,8 +368,7 @@
             width="420"
             height="627"
             style="border: none; overflow: hidden"
-            scrolling="no"
-            allowfullscreen="true"
+            allowfullscreen
             loading="lazy"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
@@ -502,7 +499,6 @@
             <div class="calendar__bottom-container">
               <button
                 type="button"
-                area-label="Записаться"
                 class="button button_singup"
               >
                 Записаться
@@ -531,14 +527,12 @@
           <div class="popup__bottom-container">
             <button
               type="button"
-              area-label="Записаться"
               class="button popup__btn-confirm"
             >
               Подтвердить запись
             </button>
             <button
               type="button"
-              area-label="Записаться"
               class="button button_inactive"
             >
               Отменить
@@ -567,7 +561,6 @@
           </div>
           <button
             type="button"
-            area-label="Записаться"
             class="button button_inactive"
           >
             Вернуться к календарю
