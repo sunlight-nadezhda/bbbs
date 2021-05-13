@@ -92,7 +92,6 @@
       <div class="header__container">
         <a
           href="search.html"
-          type="button"
           aria-label="Поиск"
           class="header__button header__button_type_search"
           target="_self"
@@ -117,7 +116,10 @@
     </header>
 
     <main class="content page__container">
-      <section class="two-columns two-columns_place_index">
+      <section
+        class="two-columns two-columns_place_index"
+        aria-label="Секция для неавторизованного пользователя"
+      >
         <div class="logo-inAuth">
           <div class="logo-inAuth__logo-block">
             <a href="about.html" class="logo-inAuth__logo" target="_self"></a>
@@ -137,7 +139,10 @@
         </div>
       </section>
 
-      <section class="block-article">
+      <section
+        class="block-article"
+        aria-label="Статья Сплав на байдарках в две строки"
+      >
         <article class="card-article card-article_color_yellow">
           <div class="card-article__content card-article__content_size_m">
             <span class="button button_type_heading card-article__select"
@@ -164,14 +169,24 @@
         </article>
         <div class="description-scroll">
           <div
-            class="description-scroll__container description-scroll__container_place_index"
+            class="
+              description-scroll__container
+              description-scroll__container_place_index
+            "
           >
             <span
-              class="caption description-scroll__caption description-scroll__caption_place_index"
+              class="
+                caption
+                description-scroll__caption
+                description-scroll__caption_place_index
+              "
               >Девочка, 10 лет. Активный отдых</span
             >
             <p
-              class="description description-scroll__text description-scroll__text_place_index"
+              class="
+                description
+                description-scroll__text description-scroll__text_place_index
+              "
             >
               Аннотация статьи в несколько абзацев. В тот момент, как ребёнок
               научился говорить, и не одно слово, а задавать бесконечное
@@ -336,8 +351,7 @@
             width="420"
             height="627"
             style="border: none; overflow: hidden"
-            scrolling="no"
-            allowfullscreen="true"
+            allowfullscreen
             loading="lazy"
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
