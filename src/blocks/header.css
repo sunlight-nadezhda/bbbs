@@ -39,6 +39,11 @@
   width: 183px;
   min-height: 30px;
   background-image: url("../images/logo.svg");
+  transition: opacity .3s ease-in-out;
+}
+
+.header__logo:hover {
+  opacity: 0.6;
 }
 
 .header__logo_type_active {
@@ -133,6 +138,11 @@
   box-sizing: content-box;
   min-width: 22px;
   min-height: 22px;
+  transition: opacity .3s ease-in-out;
+}
+
+.header__button:hover {
+  opacity: 0.6;
 }
 
 .header__button-close {
