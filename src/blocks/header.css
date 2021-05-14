@@ -13,12 +13,6 @@
   padding-bottom: 0;
 }
 
-/* .header_place_index { */
-/* .header_place_index {
-  background-color: var(--color-background);
-  padding-top: 24px;
-} */
-
 .header_fixed {
   position: fixed;
   top: 0;
@@ -37,25 +31,14 @@
   visibility: visible;
 }
 
-.header__logo-link {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .header__logo {
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
-  /* background-color: var(--color-blue); */
   background-position: center;
   width: 183px;
   min-height: 30px;
-  /* mask-image: image(url("../images/logo.svg"), var(--color-blue)); */
   background-image: url("../images/logo.svg");
-}
-
-.header__logo:active {
-  background-color: var(--color-dark);
 }
 
 .header__menu {
