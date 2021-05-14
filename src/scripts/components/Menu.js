@@ -28,6 +28,7 @@ export default class Menu {
     this._menuSettings.menuButton.classList.toggle("header__item_inactive");
     this._menuSettings.personalAccountButton.classList.toggle("header__item_active");
     this._menuSettings.content.classList.toggle("content_inactive");
+    this._menuSettings.headerSearch.classList.toggle("header__item_inactive");
   }
 
   _closeColumnMenu() {
@@ -48,7 +49,7 @@ export default class Menu {
     } else if ((scrollY > this._prevScrollPos) && (this._mediaQuery.matches) && (scrollY>100) ||
       ((scrollY<=100) && (this._mediaQuery.matches) && this._menuSettings.header.classList.contains('header_fixed'))) {
       this._menuSettings.header.classList.remove('header_fixed');
-    } else if ((scrollY < this._prevScrollPos) && (!this._mediaQuery.matches) && (scrollY>100) && 
+    } else if ((scrollY < this._prevScrollPos) && (!this._mediaQuery.matches) && (scrollY>100) &&
       (!this._menuSettings.header.classList.contains('header_fixed'))) {
       this._handleViewMenu();
     } else if ((scrollY > this._prevScrollPos) && (!this._mediaQuery.matches) && (scrollY>100) &&
@@ -56,7 +57,7 @@ export default class Menu {
       ((scrollY<=100) && (!this._mediaQuery.matches) && this._menuSettings.header.classList.contains('header_fixed'))) {
       this._handleCloseMenu();
     }
-    
+
     this._prevScrollPos = scrollY;
   }
 
