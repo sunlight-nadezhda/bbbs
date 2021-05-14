@@ -21,7 +21,7 @@
   width: 100%;
   background-color: #fff;
   border-radius: 30px;
-  height: 189px;
+  min-height: 189px;
   box-sizing: border-box;
 }
 
@@ -37,7 +37,7 @@
 @media screen and (max-width: 1280px) {
   .widget-section__item {
     padding: 30px 16px 30px 15px;
-    max-height: 179px;
+    min-height: 179px;
   }
 }
 
