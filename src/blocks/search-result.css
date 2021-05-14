@@ -1,5 +1,4 @@
 .search-result {
-  /* margin: 0; */
   padding: 0;
   list-style: none;
 }
@@ -8,15 +7,12 @@
   border-bottom: .5px solid var(--color-light-grey);
   padding-top: 15px;
   padding-bottom: 5px;
-  width: 55vw;
 }
 
 @media screen and (max-width: 1320px) {
   .search-result {
     padding-top: 20px;
-    margin: 0 auto;
-    /* width: 81vw; */
-    width: calc(100vw - 2 * 127px);
+    width: 100%;
   }
 
   .search-result__item {
@@ -27,6 +23,6 @@
 
 @media screen and (max-width: 680px) {
   .search-result {
-    width: calc(100vw - 2 * 15px);
+    width: 100%;
   }
 }
