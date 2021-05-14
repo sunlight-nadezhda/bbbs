@@ -30,7 +30,7 @@
 
 @import url('../blocks/smile-block.css');
 @import url('../blocks/smile.css');
-@import url('../blocks/logo-inAuth.css');
+@import url('../blocks/logo-about.css');
 
 @import url('../blocks/card-to-go.css');
 @import url('../blocks/description-scroll.css');
@@ -38,11 +38,11 @@
 @import url('../blocks/book-card.css');
 
 @import url('../blocks/popup.css');
-@import url('../blocks/two-columns.css');
+@import url('../blocks/card-and-story.css');
 @import url('../blocks/story.css');
 @import url('../blocks/block-article.css');
 @import url('../blocks/card-article.css');
-@import url('../blocks/four-columns.css');
+@import url('../blocks/videos-block.css');
 
 
 @import url('../blocks/video-bigcard.css');
@@ -53,5 +53,5 @@
 @import url('../blocks/search-result.css');
 @import url('../blocks/calendar-grid.css');
 @import url('../blocks/about-page.css');
-@import url('../blocks/three-columns.css');
+@import url('../blocks/info-block.css');
 @import url('../blocks/text-card.css');

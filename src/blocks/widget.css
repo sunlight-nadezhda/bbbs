@@ -1,3 +1,26 @@
 .widget {
   border-radius: 30px;
+  width: 420px;
+  height: 627px;
+  border: none;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  .widget {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .widget {
+    height: 552px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .widget {
+    width: 290px;
+    height: 433px;
+  }
 }

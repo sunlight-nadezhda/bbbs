@@ -2,11 +2,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  width: 100%;
+  grid-auto-rows: minmax(414px, max-content);
 }
 
 @media screen and (max-width: 1450px) {
   .calendar-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .calendar-grid {
+    grid-auto-rows: minmax(382px, max-content);
   }
 }
 

@@ -8,7 +8,7 @@
   </head>
   <body class="page">
     <header class="header page__container">
-      <a class="page__link" href="./index.html" target="_self">
+      <a class="header__logo-link" href="./index.html" target="_self">
         <div class="header__logo"></div>
       </a>
 
@@ -214,9 +214,9 @@
           <p class="calendar__info-item caption">Александра, +7 926 356-78-90</p>
         </div>
         <div class = "calendar__bottom-container">
-          <button type="button" area-label="Записаться" class="button">Записаться</button>
+          <button type="button" class="button">Записаться</button>
           <p class= "caption calendar__places calendar__places_active">Осталось&nbsp;<span class="caption calendar__places-count">5</span>&nbsp;мест</p>
-          <button type="button" area-label="Полный вид" class="button calendar__full-view-button"></button>
+          <button type="button" aria-label="Полный вид" class="button calendar__full-view-button"></button>
         </div>
       </div>
 
@@ -236,56 +236,58 @@
           <p class="calendar__info-item caption">Александра, +7 926 356-78-90</p>
         </div>
         <div class = "calendar__bottom-container">
-          <button type="button" area-label="Записаться" class="button">Отменить запись</button>
+          <button type="button" class="button">Отменить запись</button>
           <p class= "caption calendar__places calendar__places_inactive">Осталось&nbsp;<span class="caption calendar__places-count">5</span>&nbsp;мест</p>
-          <button type="button" area-label="Полный вид" class="button calendar__full-view-button"></button>
+          <button type="button" aria-label="Полный вид" class="button calendar__full-view-button"></button>
         </div>
       </div>
 
-      <li class="video-card">
-        <img class="video-card__image" src="<%=require('./images/video-card-image.jpg')%>" alt="Изображение фильма">
-        <div class="video-card__description">
-          <div class="video-card__containter">
-            <div class="video-card__category">Рубрика</div>
-            <div class="video-card__category">Рубрика</div>
-          </div>
-          <h2 class="title video-card__title">Жутко громко и запредельно близко</h2>
-          <p class="video-card__caption caption">Василий Сигарев, Борисов-Мусотов (Россия), 2009 год</p>
-          <a class="clickable-element" href="https://www.kinopoisk.ru/film/195432/video/58904/"
-             target="_blank" rel="noopener noreferrer">смотреть трейлер
-          </a>
-        </div>
-      </li>
-
-      <li class="book-card">
-        <div class="book-card__book-container">
-          <div class="book-card__book">
-            <h2 class="title book-card__title">Жизнь после утраты</h2>
-            <hr class="book-card__line">
-            <div class="book-card__caption-container">
-              <p class="book-card__caption caption">Волкан Вамик, Зинтл Элизабет</p>
-              <p class="book-card__year caption">2011 год</p>
+      <ul>
+        <li class="video-card">
+          <img class="video-card__image" src="<%=require('./images/video-card-image.jpg')%>" alt="Изображение фильма">
+          <div class="video-card__description">
+            <div class="video-card__containter">
+              <span class="video-card__category">Рубрика</span>
+              <span class="video-card__category">Рубрика</span>
             </div>
+            <h2 class="title video-card__title">Жутко громко и запредельно близко</h2>
+            <p class="video-card__caption caption">Василий Сигарев, Борисов-Мусотов (Россия), 2009 год</p>
+            <a class="clickable-element" href="https://www.kinopoisk.ru/film/195432/video/58904/"
+               target="_blank" rel="noopener noreferrer">смотреть трейлер
+            </a>
+          </div>
+        </li>
 
+        <li class="book-card">
+          <div class="book-card__book-container">
+            <div class="book-card__book">
+              <h2 class="title book-card__title">Жизнь после утраты</h2>
+              <hr class="book-card__line">
+              <div class="book-card__caption-container">
+                <p class="book-card__caption caption">Волкан Вамик, Зинтл Элизабет</p>
+                <p class="book-card__year caption">2011 год</p>
+              </div>
+
+            </div>
           </div>
-        </div>
-        <div class="description-scroll">
-          <div class="description-scroll__container ">
-            <p class="description description-scroll__text book-card__description">
-              Аннотация книги, статьи, фильма в несколько абзацев.
-              В тот момент, как ребёнок научился говорить, и не одно слово,
-              а задавать бесконечное количество вопросов, жизнь меняется.
-              Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить.
-              В тот момент, как ребёнок научился говорить, и не одно слово, а 
-              задавать бесконечное количество вопросов, жизнь меняется.
-              Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев.
-              В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное
-              количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать
-              чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.
-            </p>
+          <div class="description-scroll">
+            <div class="description-scroll__container ">
+              <p class="description description-scroll__text book-card__description">
+                Аннотация книги, статьи, фильма в несколько абзацев.
+                В тот момент, как ребёнок научился говорить, и не одно слово,
+                а задавать бесконечное количество вопросов, жизнь меняется.
+                Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить.
+                В тот момент, как ребёнок научился говорить, и не одно слово, а 
+                задавать бесконечное количество вопросов, жизнь меняется.
+                Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев.
+                В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное
+                количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать
+                чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.
+              </p>
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
+      </ul>
 
       <article class="card-article card-article_size_m card-article_color_yellow">
         <div class="card-article__content card-article__content_size_m">
@@ -338,12 +340,12 @@
       </div>
      </article>
 
-      <div class="logo-inAuth">
-        <div class="logo-inAuth__logo-block">
-          <div class="logo-inAuth__logo"></div>
+      <div class="logo-about">
+        <div class="logo-about__logo-block">
+          <div class="logo-about__logo"></div>
         </div>
-        <div class="logo-inAuth__about">
-          <p class="logo-inAuth__text">Наставники.про – цифоровая информационная платформа огрганизации «Старшие Братья Старшие Сестры». Созданная для поддержки наставников программы.</p>
+        <div class="logo-about__info">
+          <p class="logo-about__text">Наставники.про – цифоровая информационная платформа огрганизации «Старшие Братья Старшие Сестры». Созданная для поддержки наставников программы.</p>
         </div>
       </div>
 
@@ -365,7 +367,7 @@
               <input type="password" name="password" placeholder="Пароль" class="popup__input caption" required minlength="8" maxlength="40">
             </label>
             </fieldset>
-            <p class="caption popup__caption">Забыли пароль?</p>
+            <a href="#" target="_self" class="caption popup__caption">Забыли пароль?</a>
             <button type="submit" class="button popup__btn-submit">Войти</button>
 
           </form>
