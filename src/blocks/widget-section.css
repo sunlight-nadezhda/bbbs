@@ -27,8 +27,16 @@
 
 .widget-section__question {
   max-width: 770px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   margin: 0;
+}
+
+.widget-section__tag {
+  background-color: var(--color-background);
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 15px;
 }
 
 .widget-section__caption {

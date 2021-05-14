@@ -44,7 +44,7 @@
   max-width: 1770px;
   max-height: 1126px;
   width: calc(100vw - 150px);
-  height: 1126px;
+  height: 90vh;
   padding: 30px 30px 50px;
   box-sizing: border-box;
   flex-direction: column;
