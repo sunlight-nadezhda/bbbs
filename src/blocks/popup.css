@@ -44,7 +44,7 @@
   max-width: 1770px;
   max-height: 1126px;
   width: calc(100vw - 150px);
-  height: 1126px;
+  height: 90vh;
   padding: 30px 30px 50px;
   box-sizing: border-box;
   flex-direction: column;
@@ -111,7 +111,7 @@
 .popup__btn-close {
   display: flex;
   align-self: flex-end;
-  position:relative;
+  position: relative;
   top: 9px;
   left: 80px;
 }
@@ -184,6 +184,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
 }
 
 .popup__input {
@@ -193,11 +194,15 @@
   border: none;
   border-radius: 30px;
   background-color: var(--color-background);
-  font-family: inherit;
   box-sizing: border-box;
+  font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
   width: 100%;
   padding: 8px 20px;
   color: var(--color-dark-grey);
+}
+
+.popup__input::placeholder {
+  font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
 }
 
 .popup__input:focus {
@@ -208,6 +213,8 @@
 .popup__caption {
   padding-bottom: 30px;
   color: var(--color-dark-grey);
+  text-decoration: none;
+  display: block;
 }
 
 .popup__btn-submit {
@@ -218,7 +225,7 @@
 }
 
 .popup__image-success {
-  background-image: url('../images/figures-success-popup.svg');
+  background-image: url("../images/figures-success-popup.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 413px;
@@ -227,7 +234,7 @@
   padding-bottom: 30px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   .popup__container_video {
     width: calc(100vw - 270px);
     height: 789px;
@@ -238,7 +245,7 @@
   }
 }
 
-@media screen and (max-width:1320px) {
+@media screen and (max-width: 1320px) {
   .popup__container_video {
     width: calc(100vw - 254px);
     height: 67%;
@@ -266,7 +273,7 @@
 
   .popup__btn-close {
     left: 0;
-    top:0;
+    top: 0;
     margin-bottom: 5px;
   }
 
@@ -288,7 +295,7 @@
   }
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width: 680px) {
   .popup__container_video {
     width: calc(100vw - 30px);
   }
@@ -307,23 +314,22 @@
     padding-top: 70px;
   }
 
-  
   .popup__bottom-container {
     padding-bottom: 100px;
   }
-    
+
   .popup__capitals {
-    grid-template-columns: calc((100vw - 60px));;
+    grid-template-columns: calc((100vw - 60px));
   }
 
   .popup__image-success {
-    background-image: url('../images/figures-success-popup.png');
+    background-image: url("../images/figures-success-popup.png");
     width: 207px;
     height: 85px;
   }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width: 360px) {
   .popup__bottom-container {
     display: flex;
     flex-direction: column;

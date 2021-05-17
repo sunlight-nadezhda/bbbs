@@ -6,7 +6,8 @@ const menuSettings = {
     menuSocials: document.querySelector('.header__menu-socials'),
     personalAccountButton: document.querySelector('.header__button_type_personal-account'),
     content: document.querySelector('.content'),
-    changeCity: document.querySelector('.header__change-city')
+    changeCity: document.querySelector('.header__change-city'),
+    headerSearch: document.querySelector('.header__search')
 };
 
 const popupLogin = document.querySelector('.popup_type_login');

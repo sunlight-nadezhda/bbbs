@@ -1,4 +1,4 @@
-.two-columns {
+.card-and-story {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 520px;
@@ -7,19 +7,19 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .two-columns {
+  .card-and-story {
     grid-template-rows: 414px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .two-columns {
+  .card-and-story {
     grid-template-rows: 382px;
   }
 }
 
 @media screen and (max-width: 860px) {
-  .two-columns {
+  .card-and-story {
     grid-template-columns: 1fr;
     grid-template-rows: min-content 290px;
     row-gap: 30px;

@@ -1,5 +1,4 @@
 .search-result {
-  /* margin: 0; */
   padding: 0;
   list-style: none;
 }
@@ -14,9 +13,7 @@
 @media screen and (max-width: 1320px) {
   .search-result {
     padding-top: 20px;
-    margin: 0 auto;
-    /* width: 81vw; */
-    width: calc(100vw - 2 * 127px);
+    width: 100%;
   }
 
   .search-result__item {
@@ -27,6 +24,6 @@
 
 @media screen and (max-width: 680px) {
   .search-result {
-    width: calc(100vw - 2 * 15px);
+    width: 100%;
   }
 }

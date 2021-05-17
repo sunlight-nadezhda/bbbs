@@ -50,8 +50,7 @@
 
 .calendar__info-container {
   width: 100%;
-  margin: 0;
-  padding-top: 50px;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
 }
