@@ -3,5 +3,36 @@
 
 .togo-page__choice-container {
   margin-top: 10px;
-  margin-bottom: 50px;  
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.togo-page__activity-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.togo-page__ages-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .togo-page__choice-container {
+    margin-top: -10px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .togo-page__choice-container {
+    margin-bottom: 4px;
+  }
 }
