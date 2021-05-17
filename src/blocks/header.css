@@ -46,11 +46,9 @@
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
-  /* background-color: var(--color-blue); */
   background-position: center;
   width: 183px;
   min-height: 30px;
-  /* mask-image: image(url("../images/logo.svg"), var(--color-blue)); */
   background-image: url("../images/logo.svg");
 }
 
