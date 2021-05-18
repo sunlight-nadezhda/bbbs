@@ -1,0 +1,13 @@
+.rubric {
+  max-width: 120px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff;
+  opacity: 0.6;
+  margin: 0;
+  padding: 2px 7px;
+  box-sizing: content-box;
+  border-radius: 15px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,11 @@
+.button-mentor {
+  background-color: var(--color-background);
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 2px 7px;
+  text-transform: uppercase;
+  color: var(--color-dark-grey);
+  cursor: pointer;
+  opacity: 0.3;
+}

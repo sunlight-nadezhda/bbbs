@@ -43,25 +43,6 @@
   transform: translateX(-50%);
 }
 
-.video-card__category {
-  height: 17px;
-  max-width: 120px;
-  font-size: 10px;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.6);
-  font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 2px 7px;
-  box-sizing: content-box;
-  border-radius: 15px;
-  text-transform: uppercase;
-}
-
 @media screen and (max-width: 1910px) {
   .video-card:nth-child(n+4) {
     display: none;
@@ -99,7 +80,7 @@
 }
 
 @media screen and (max-width: 460px) {
-  
+
   .video-card__description {
     padding-left: 15px;
     padding-right: 15px;

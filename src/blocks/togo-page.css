@@ -9,13 +9,16 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  overflow: hidden;
 }
 
 .togo-page__activity-container {
   display: flex;
+  flex:none;
   flex-direction: row;
   justify-content: center;
   padding-bottom: 15px;
+  overflow: hidden;
 }
 
 .togo-page__ages-container {
@@ -30,6 +33,13 @@
     margin-bottom: 24px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .togo-page__choice-container {
+    align-items: flex-start;
+  }
+}
+
 
 @media screen and (max-width: 680px) {
   .togo-page__choice-container {
