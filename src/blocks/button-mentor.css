@@ -9,3 +9,7 @@
   cursor: pointer;
   opacity: 0.3;
 }
+
+.button-mentor_invisible {
+  visibility: hidden;
+}

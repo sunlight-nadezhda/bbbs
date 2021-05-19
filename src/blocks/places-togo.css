@@ -1,0 +1,25 @@
+.places-togo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: fit-content;
+  column-gap: 30px;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1420px) {
+  .places-togo {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .places-togo {
+    grid-template-columns: 1fr;
+  }
+}
