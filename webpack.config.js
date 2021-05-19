@@ -75,6 +75,10 @@ module.exports = {
       template: './src/togo.html',
       filename: 'togo.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/togo_registered.html',
+      filename: 'togo_registered.html'
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
