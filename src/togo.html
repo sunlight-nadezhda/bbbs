@@ -10,7 +10,7 @@
   <body class="page">
     <header class="header header_place_index page__container">
       <a class="header__logo" href="./index.html" target="_self"></a>
-    
+
       <nav class="header__menu">
         <div class="header__menu-container">
           <ul class="header__menu-links">
@@ -114,32 +114,34 @@
       ></button>
     </header>
 
-    <main class="content content_type_column page__container">
-      <h1 class="page-title">Куда пойти</h1>
+    <main class="content page__container">
+      <h1 class="page-title togo-page__title">Куда пойти</h1>
       <div class="togo-page__choice-container">
         <div class="togo-page__activity-container">
             <button class="button button_inactive-pressed">Все</button>
             <button class="button button_inactive">Выбор наставников</button>
-            <button class="button button_inactive-pressed">Музеи</button>
+            <button class="button button_inactive">Музеи</button>
             <button class="button button_inactive">Парки</button>
-            <button class="button button_inactive-pressed">Театры</button>
+            <button class="button button_inactive">Театры</button>
             <button class="button button_inactive">Спорт</button>
-            <button class="button button_inactive-pressed">Экскурсии</button>
+            <button class="button button_inactive">Экскурсии</button>
             <button class="button button_inactive">Секции</button>
+            <div class="togo-page__rect-transparency togo-page__rect-transparency_type_activity"></div>
         </div>
-        <div class="togo-page__activity-container">
-            <button class="button button_inactive-pressed">8&ndash;10 лет</button>
+        <div class="togo-page__age-container">
+            <button class="button button_inactive">8&ndash;10 лет</button>
             <button class="button button_inactive">11&ndash;13 лет</button>
-            <button class="button button_inactive-pressed">14&ndash;18 лет</button>
+            <button class="button button_inactive">14&ndash;18 лет</button>
             <button class="button button_inactive">18+ лет</button>
+            <div class="togo-page__rect-transparency togo-page__rect-transparency_type_age"></div>
         </div>
       </div>
 
       <section class="block-article">
         <article class="card-article card-article_color_yellow">
           <div class="card-article__content card-article__content_size_m">
-            <span class="button button_type_heading card-article__select"
-              >выбор наставника</span
+            <button type="button" aria-label="Выбор наставника" class="tag button-mentor"
+              >выбор наставника</button
             >
             <div class="card-article__text card-article__text_size_m">
               <h2 class="title card-article__title_size_m">
@@ -198,6 +200,114 @@
           </div>
         </div>
       </section>
+
+
+      <section class="places-togo">
+        <div class="text-card text-card_place_togo">
+          <article class="card-article places-togo__card-article card-article_color_green">
+            <div class="card-article__content card-article__content_size_m card-article__content_place_text-card">
+            <button type="button" aria-label="Выбор наставника" class="tag button-mentor"
+              >выбор наставника</button
+            >
+              <div class="card-article__text card-article__text_size_m">
+                <h2 class="title card-article__title_size_m">
+                  Название места несколько слов
+                </h2>
+                <span class="caption">Адрес места в одну строку</span>
+              </div>
+              <a class="clickable-element card-article__link" href="#" target="_self">перейти на сайт</a>
+            </div>
+          </article>
+
+          <div class="description-scroll">
+            <div class="description-scroll__container description-scroll__container_place_togo">
+              <span class="caption description-scroll__caption">Девочка, 10 лет. Активный отдых</span>
+              <p class="description  description-scroll__text">
+                Аннотация статьи в несколько абзацев. В тот момент, как ребёнок
+                научился говорить, и не одно слово, а задавать бесконечное
+                количество вопросов, жизнь меняется. Вы будете не понимать друг
+                друга, потом понимать чуть лучше и, Аннотация статьи в несколько
+                абзацев. В тот момент, как ребёнок научился говорить, и не одно
+                слово, а задавать бесконечное количество вопросов, жизнь меняется.
+                Вы будете не понимать друг друга, потом понимать чуть лучше и,
+                Аннотация статьи в несколько абзацев. В тот момент, как ребёнок
+                научился говорить, и не одно слово, а задавать бесконечное
+                количество вопросов, жизнь меняется. Вы будете не по Аннотация
+                статьи в несколько абзацев. В тот момент, как ребёнок научился
+                говорить, и не одно слово, а задавать бесконечное количество
+                вопросов, жизнь меняется.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-card text-card_place_togo">
+          <article class="card-article card-article_color_green">
+            <div class="card-article__content card-article__content_size_m card-article__content_place_text-card">
+            <button type="button" aria-label="Выбор наставника" class="tag button-mentor button-mentor_invisible"
+              >выбор наставника</button
+            >
+              <div class="card-article__text card-article__text_size_m">
+                <h2 class="title card-article__title_size_m">
+                  Название места
+                </h2>
+                <span class="caption">Длинный адрес места в несколько строк, длинный адрес места.
+                </span>
+              </div>
+              <a class="clickable-element card-article__link" href="#" target="_self">перейти на сайт</a>
+            </div>
+          </article>
+          <div class="description-scroll">
+            <div class="description-scroll__container description-scroll__container_place_togo">
+
+              <p class="description  description-scroll__text">
+                Аннотация статьи в несколько абзацев. В тот момент, как ребёнок
+                научился говорить, и не одно слово, а задавать бесконечное
+                количество вопросов, жизнь меняется. Вы будете не понимать друг
+                друга, потом понимать чуть лучше и, Аннотация статьи в несколько
+                абзацев. В тот момент, как ребёнок научился говорить, и не одно
+                слово, а задавать бесконечное количество вопросов, жизнь меняется.
+                Вы будете не понимать друг друга, потом понимать чуть лучше и,
+                Аннотация статьи в несколько абзацев. В тот момент, как ребёнок
+                научился говорить, и не одно слово, а задавать бесконечное
+                количество вопросов, жизнь меняется. Вы будете не по Аннотация
+                статьи в несколько абзацев. В тот момент, как ребёнок научился
+                говорить, и не одно слово, а задавать бесконечное количество
+                вопросов, жизнь меняется.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-card text-card_place_togo">
+          <article class="card-article card-article_color_green">
+            <div class="card-article__content card-article__content_size_m card-article__content_place_text-card">
+            <button type="button" aria-label="Выбор наставника" class="tag button-mentor"
+              >выбор наставника</button
+            >
+              <div class="card-article__text card-article__text_size_m">
+                <h2 class="title card-article__title_size_m">
+                  Название места несколько слов
+                </h2>
+                <span class="caption">Адрес места в одну строку</span>
+              </div>
+              <a class="clickable-element card-article__link" href="#" target="_self">перейти на сайт</a>
+            </div>
+          </article>
+
+          <div class="description-scroll">
+            <div class="description-scroll__container_place_togo description-scroll__container">
+              <span class="caption description-scroll__caption">Девочка, 10 лет. Познавательный</span>
+              <p class="description description-scroll__text">
+                 Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов,
+                 жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент,
+                 как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Аннотация статьи в несколько абзацев.
+                 Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.
+                 Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 
 

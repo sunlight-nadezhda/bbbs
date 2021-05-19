@@ -1,4 +1,9 @@
 .togo-page {
+  justify-content: center;
+}
+
+.togo-page__title {
+  text-align: center;
 }
 
 .togo-page__choice-container {
@@ -8,20 +13,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .togo-page__activity-container {
   display: flex;
+  flex:none;
   flex-direction: row;
   justify-content: center;
   padding-bottom: 15px;
+  width: max-content;
+  position: relative;
 }
 
-.togo-page__ages-container {
+.togo-page__age-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  overflow: hidden;
+  width: max-content;
+  position: relative;
+}
+
+.togo-page__rect-transparency {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  background: linear-gradient(180deg, #F7F5F5 0%, rgba(255, 255, 255, 0) 100%);
+  transform: rotate(90deg);
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -31,8 +54,46 @@
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 940px) {
+  .togo-page__choice-container {
+    align-items: flex-start;
+    align-self: flex-start;
+    width: calc(100% + 127px);
+  }
+
+  .togo-page__activity-container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .togo-page__age-container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+
+@media screen and (max-width: 830px) {
+
+  .togo-page__rect-transparency_type_activity {
+    display: block;
+  }
+
   .togo-page__choice-container {
     margin-bottom: 4px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+
+  .togo-page__choice-container {
+    width: calc(100% + 15px);
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .togo-page__rect-transparency_type_age {
+    display: block;
   }
 }

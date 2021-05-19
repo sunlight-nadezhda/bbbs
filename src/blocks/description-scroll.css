@@ -1,5 +1,5 @@
 .description-scroll {
-  width: 100%;  
+  width: 100%;
   height: 100%;
   border-radius: 30px;
   background-color: #fff;
@@ -9,6 +9,8 @@
 
 .description-scroll__container {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .description-scroll__container_place_index {
@@ -22,13 +24,18 @@
   box-sizing: border-box;
 }
 
+.description-scroll__container_place_togo {
+  height: 222px;
+  box-sizing: border-box;
+}
+
 .description-scroll__caption {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   display: inline-block;
 }
 
 .description-scroll__caption_place_index {
-  margin-bottom: 105px;
+  padding-bottom: 105px;
 }
 
 .description-scroll__text {
@@ -69,7 +76,7 @@
 
 @media screen and (max-width: 1420px) {
   .description-scroll__caption_place_index {
-    margin-bottom: 5px;
+    padding-bottom: 5px;
   }
 
   .description-scroll__container_place_index {
@@ -81,7 +88,7 @@
     max-width: 570px;
     width: 100%;
   }
-  
+
 
   .description-scroll__text_place_index {
     max-height: 106px;
