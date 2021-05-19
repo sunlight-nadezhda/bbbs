@@ -191,7 +191,7 @@
 }
 
 .card-article__image {
-  display: block;
+  display: flex;
   border-radius: 15px;
   overflow: hidden;
   width: 100%;
