@@ -326,37 +326,87 @@
             заполните форму</span>, и мы добавим вашу рекомендацию.
           </h2>
           <form class="popup__form" name="form-recomendation-place" novalidate>
-            <fieldset class="popup__set">
+            <fieldset class="popup__set popup__set_place_recomendation">
               <label class="popup__field popup__field_place_recomendation">
                 <input
                   type="text"
                   name="title"
                   placeholder="Название*"
-                  class="popup__input caption"
+                  class="popup__input guide-subtitle guide-subtitle_place_popup-recomendation"
                   required
                   minlength="2"
                   maxlength="40"
                 />
-
+              </label>
+              <label class="popup__field popup__field_place_recomendation">
                 <input
                 type="url"
                 name="link"
                 placeholder="Сайт"
-                class="popup__input caption"
+                class="popup__input guide-subtitle guide-subtitle_place_popup-recomendation"
                 />
+              </label>
+            </fieldset>
+
+            <label class="popup__field popup__field_place_recomendation">
+              <input
+                type="text"
+                name="address"
+                placeholder="Адрес*"
+                class="popup__input guide-subtitle guide-subtitle_place_popup-recomendation"
+                required
+                minlength="8"
+              />
+            </label>
+
+            <fieldset class="popup__set popup__set_place_recomendation">
+              <label for="boy" class="popup__field popup__field_place_recomendation">
+                <div class="popup__choice-container">
+                  <input type="radio" class="guide-subtitle guide-subtitle_place_popup-recomendation popup__input-radio" name="gender" id="boy" value="boy">
+                  <span class="popup__input-radio-text">Мальчик</span>
+                </div>
+              </label>
+
+              <label for="girl" class="popup__field popup__field_place_recomendation">
+                <div class="popup__choice-container">
+                  <input type="radio" class=" guide-subtitle guide-subtitle_place_popup-recomendation popup__input-radio" name="gender" id="girl" value="girl">
+                  <span class="popup__input-radio-text">Девочка</span>
+                </div>
               </label>
 
               <label class="popup__field popup__field_place_recomendation">
                 <input
-                  type="text"
-                  name="address"
-                  placeholder="Адрес*"
-                  class="popup__input caption"
-                  required
-                  minlength="8"
+                type="url"
+                name="link"
+                placeholder="Возраст*"
+                required
+                class="popup__input guide-subtitle guide-subtitle_place_popup-recomendation"
                 />
               </label>
             </fieldset>
+
+            <div class="select-container">
+              <ul class="select-activity" name="type-of-activity" id="type-of-activity" required>
+                <li class="select-activity__title">Тип отдыха*</li>
+                <div class="select-activity__items">
+                  <li value="active" class="select-activity__item">Активный</li>
+                  <li value="fun" class="select-activity__item">Развлекательный</li>
+                  <li value="informative" class="select-activity__item">Познавательный</li>
+                </div>
+                <button type="button" aria-label="Раскрыть список" class="select-activity__icon"></button>
+              </ul>
+            </div>
+
+            <label class="popup__field popup__field_place_recomendation popup__field_type_behind">
+              <textarea
+                name="comment"
+                placeholder="Комментарий* Поделитесь впечатлениями о проведенном времени"
+                class="popup__textarea guide-subtitle guide-subtitle_place_popup-recomendation"
+                required
+              ></textarea>
+            </label>
+
+
             <div class="popup__togo-bottom-container">
               <button
                 type="button"
@@ -368,8 +418,6 @@
                 Отправить
               </button>
             </div>
-
-
           </form>
         </div>
       </div>

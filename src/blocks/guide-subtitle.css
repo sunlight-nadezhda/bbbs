@@ -10,6 +10,16 @@
   cursor: pointer;
 }
 
+.guide-subtitle_place_popup-recomendation {
+  cursor: unset;
+  color: #000;
+}
+
+.guide-subtitle_place_popup-recomendation::placeholder {
+  color: var(--color-light-grey);
+  cursor: unset;
+}
+
 .guide-subtitle:hover {
   color: var(--color-dark);
 }

@@ -1,14 +1,18 @@
 import './index.css';
 import Menu from "../scripts/components/Menu.js";
 import Widget from "../scripts/components/Widget.js";
+import Select from "../scripts/components/Select.js";
 import { menuSettings, popupLogin, popupVideo, popupCity, popupConfirm,
-   popupCalendar, popupSuccess, popupRecomendationPlace, widgetSelector, videoBigCardSelector } from "../scripts/utils/utils.js";
+   popupCalendar, popupSuccess, popupRecomendationPlace, widgetSelector, selectActivitySelector, videoBigCardSelector } from "../scripts/utils/utils.js";
 
 const menu = new Menu(menuSettings);
 menu.setEventListeners();
 
 const widget = new Widget(widgetSelector);
 widget.setEventListeners();
+
+const select = new Select(selectActivitySelector);
+select.setEventListeners();
 
 
 //Работа с попапом регистрации

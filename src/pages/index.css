@@ -61,3 +61,6 @@
 
 @import url('../blocks/togo-page.css');
 @import url('../blocks/places-togo.css');
+
+@import url('../blocks/select-container.css');
+@import url('../blocks/select-activity.css');
