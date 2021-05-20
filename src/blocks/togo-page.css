@@ -2,10 +2,6 @@
   justify-content: center;
 }
 
-.togo-page__title {
-  text-align: center;
-}
-
 .togo-page__choice-container {
   margin-top: 10px;
   display: flex;

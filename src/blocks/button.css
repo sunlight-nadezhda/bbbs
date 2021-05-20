@@ -88,3 +88,9 @@
     line-height: 1.42;
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .button {
+    display: inline-flex;
+  }
+}

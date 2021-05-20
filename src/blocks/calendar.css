@@ -96,6 +96,7 @@
 .calendar__month-container {
   margin-top: 10px;
   margin-bottom: 50px;
+  display: flex;
 }
 
 @media screen and (max-width: 1024px) {
@@ -131,4 +132,4 @@
   .calendar__month-container {
     margin-bottom: 4px;
   }
-} 
+}
