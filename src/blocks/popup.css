@@ -260,12 +260,25 @@
   border-radius: 30px;
   background-color: var(--color-background);
   box-sizing: border-box;
-  font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
   width: 100%;
-  padding: 8px 20px;
+  padding: 13px 20px 16px;
   color: var(--color-dark-grey);
   resize: none;
   outline: none;
+  overflow: hidden;
+}
+
+.popup__pseudo-textarea {
+  padding: 13px 20px 16px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  display: flex;
+  border: 1px solid red;
+  border-radius: 30px;
+  box-sizing: border-box;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
 }
 
 .popup__textarea:focus {
