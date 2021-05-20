@@ -19,5 +19,6 @@ const popupCalendar = document.querySelector('.popup_type_calendar');
 const popupConfirm = document.querySelector('.popup_type_confirm');
 const popupSuccess = document.querySelector('.popup_type_success');
 const popupRecomendationPlace = document.querySelector('.popup_type_recomendation-place');
+const selectActivitySelector = document.querySelector('.select-activity');
 
-export {menuSettings, popupLogin, popupVideo, popupCity, popupConfirm, popupSuccess, popupRecomendationPlace, widgetSelector, videoBigCardSelector,popupCalendar};
+export {menuSettings, popupLogin, popupVideo, popupCity, popupConfirm, popupSuccess, popupRecomendationPlace, widgetSelector, selectActivitySelector, videoBigCardSelector,popupCalendar};
