@@ -120,6 +120,12 @@
   margin: 0 0 16px;
 }
 
+.popup__title_type_recomendation {
+  text-align: center;
+  min-width: 710px;
+  padding-top: 30px;
+}
+
 .popup__title_type_confirm {
   padding-top: 200px;
   margin: 0;
@@ -187,6 +193,14 @@
   font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
 }
 
+.popup__field_place_recomendation {
+  display: grid;
+  column-gap: 30px;
+  height: 48px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
 .popup__input {
   display: flex;
   align-items: center;
@@ -232,6 +246,18 @@
   height: 169px;
   padding-top: 29px;
   padding-bottom: 30px;
+}
+
+.popup__togo-bottom-container {
+  width: 100%;
+  margin: 0;
+  padding-top: 30px;
+  display: flex;
+  align-items: baseline;
+}
+
+.popup__add-photo-caption {
+  margin: 0 auto 0 20px;
 }
 
 @media screen and (max-width: 1440px) {

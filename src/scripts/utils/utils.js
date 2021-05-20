@@ -18,5 +18,6 @@ const videoBigCardSelector = document.querySelector('.video-bigcard__link');
 const popupCalendar = document.querySelector('.popup_type_calendar');
 const popupConfirm = document.querySelector('.popup_type_confirm');
 const popupSuccess = document.querySelector('.popup_type_success');
+const popupRecomendationPlace = document.querySelector('.popup_type_recomendation-place');
 
-export {menuSettings, popupLogin, popupVideo, popupCity, popupConfirm, popupSuccess, widgetSelector, videoBigCardSelector,popupCalendar};
+export {menuSettings, popupLogin, popupVideo, popupCity, popupConfirm, popupSuccess, popupRecomendationPlace, widgetSelector, videoBigCardSelector,popupCalendar};

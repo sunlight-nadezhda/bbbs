@@ -2,7 +2,7 @@ import './index.css';
 import Menu from "../scripts/components/Menu.js";
 import Widget from "../scripts/components/Widget.js";
 import { menuSettings, popupLogin, popupVideo, popupCity, popupConfirm,
-   popupCalendar, popupSuccess, widgetSelector, videoBigCardSelector } from "../scripts/utils/utils.js";
+   popupCalendar, popupSuccess, popupRecomendationPlace, widgetSelector, videoBigCardSelector } from "../scripts/utils/utils.js";
 
 const menu = new Menu(menuSettings);
 menu.setEventListeners();
@@ -52,6 +52,10 @@ function doSomething(evt) {
   if (evt.target.classList.contains('popup__btn-confirm')) {
     document.querySelector('.popup_opened').classList.remove('popup_opened');
     openPopup(popupSuccess);
+  }
+
+  if (evt.target.classList.contains('togo-page__clickable-header_place_page')) {
+    openPopup(popupRecomendationPlace);
   }
 
 }

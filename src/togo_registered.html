@@ -8,8 +8,8 @@
   </head>
 
   <body class="page">
-    <header class="header header_place_index page__container">
-      <a class="header__logo" href="./index.html" target="_self"></a>
+    <header class="header page__container">
+      <a class="header__logo header__logo_type_active" href="./index.html" target="_self"></a>
 
       <nav class="header__menu">
         <div class="header__menu-container">
@@ -85,12 +85,17 @@
             </li>
           </ul>
         </div>
-        <div class="header__bottom-container"></div>
+        <div class="header__bottom-container">
+          <div class="header__city-container">
+            <p class="description header__city">Москва</p>
+            <p class="description header__change-city">. Изменить город</p>
+          </div>
+          <p class="description header__exit">Выйти</p>
+        </div>
       </nav>
       <div class="header__container">
         <a
           href="search.html"
-          type="button"
           aria-label="Поиск"
           class="header__button header__button_type_search"
           target="_self"
@@ -99,7 +104,7 @@
         <button
           type="button"
           aria-label="Личный кабинет"
-          class="header__button header__button_type_personal-account"
+          class="header__button header__button_type_personal-account header__button_type_personal-account-active"
         ></button>
       </div>
       <button
@@ -118,11 +123,11 @@
       <h1 class="page-title togo-page__title">Куда пойти</h1>
       <div class="togo-page__choice-container">
         <div class="togo-page__activity-container">
-            <button class="button button_inactive-pressed">Все</button>
-            <button class="button button_inactive">Выбор наставников</button>
+            <button class="button button_inactive">Все</button>
+            <button class="button button_inactive-pressed">Выбор наставников</button>
             <button class="button button_inactive">Музеи</button>
             <button class="button button_inactive">Парки</button>
-            <button class="button button_inactive">Театры</button>
+            <button class="button button_inactive-pressed">Театры</button>
             <button class="button button_inactive">Спорт</button>
             <button class="button button_inactive">Экскурсии</button>
             <button class="button button_inactive">Секции</button>
@@ -131,14 +136,19 @@
         <div class="togo-page__age-container">
             <button class="button button_inactive">8&ndash;10 лет</button>
             <button class="button button_inactive">11&ndash;13 лет</button>
-            <button class="button button_inactive">14&ndash;18 лет</button>
-            <button class="button button_inactive">18+ лет</button>
+            <button class="button button_inactive-pressed">14&ndash;18 лет</button>
+            <button class="button button_inactive-pressed">18+ лет</button>
             <div class="togo-page__rect-transparency togo-page__rect-transparency_type_age"></div>
         </div>
       </div>
 
-      <section class="block-article">
-        <article class="card-article card-article_color_yellow">
+      <h2 class="card-article togo-page__card-article-registered title">
+        Если вы были в интересном месте и хотите порекомендовать его другим наставникам
+        – <span class="clickable-header togo-page__clickable-header togo-page__clickable-header_place_page">заполните форму</span>, и мы добавим вашу рекомендацию.
+      </h2>
+
+      <section class="block-article togo-page__block-article">
+        <div class="card-article card-article_color_yellow">
           <div class="card-article__content card-article__content_size_m">
             <button type="button" aria-label="Выбор наставника" class="tag button-mentor"
               >выбор наставника</button
@@ -161,8 +171,8 @@
               >перейти на сайт</a
             >
           </div>
-        </article>
-        <div class="description-scroll">
+        </div>
+        <article class="description-scroll">
           <div
             class="
               description-scroll__container
@@ -198,13 +208,13 @@
               вопросов, жизнь меняется.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
 
       <section class="places-togo">
         <div class="text-card text-card_place_togo">
-          <article class="card-article places-togo__card-article card-article_color_green">
+          <div class="card-article places-togo__card-article card-article_color_green">
             <div class="card-article__content card-article__content_size_m card-article__content_place_text-card">
             <button type="button" aria-label="Выбор наставника" class="tag button-mentor"
               >выбор наставника</button
@@ -217,9 +227,9 @@
               </div>
               <a class="clickable-element card-article__link" href="#" target="_self">перейти на сайт</a>
             </div>
-          </article>
+          </div>
 
-          <div class="description-scroll">
+          <article class="description-scroll">
             <div class="description-scroll__container description-scroll__container_place_togo">
               <span class="caption description-scroll__caption">Девочка, 10 лет. Активный отдых</span>
               <p class="description  description-scroll__text">
@@ -238,10 +248,10 @@
                 вопросов, жизнь меняется.
               </p>
             </div>
-          </div>
+          </article>
         </div>
         <div class="text-card text-card_place_togo">
-          <article class="card-article card-article_color_green">
+          <div class="card-article card-article_color_green">
             <div class="card-article__content card-article__content_size_m card-article__content_place_text-card">
             <button type="button" aria-label="Выбор наставника" class="tag button-mentor button-mentor_invisible"
               >выбор наставника</button
@@ -255,8 +265,8 @@
               </div>
               <a class="clickable-element card-article__link" href="#" target="_self">перейти на сайт</a>
             </div>
-          </article>
-          <div class="description-scroll">
+          </div>
+          <article class="description-scroll">
             <div class="description-scroll__container description-scroll__container_place_togo">
 
               <p class="description  description-scroll__text">
@@ -275,10 +285,10 @@
                 вопросов, жизнь меняется.
               </p>
             </div>
-          </div>
+          </article>
         </div>
         <div class="text-card text-card_place_togo">
-          <article class="card-article card-article_color_green">
+          <div class="card-article card-article_color_green">
             <div class="card-article__content card-article__content_size_m card-article__content_place_text-card">
             <button type="button" aria-label="Выбор наставника" class="tag button-mentor"
               >выбор наставника</button
@@ -291,9 +301,9 @@
               </div>
               <a class="clickable-element card-article__link" href="#" target="_self">перейти на сайт</a>
             </div>
-          </article>
+          </div>
 
-          <div class="description-scroll">
+          <article class="description-scroll">
             <div class="description-scroll__container_place_togo description-scroll__container">
               <span class="caption description-scroll__caption">Девочка, 10 лет. Познавательный</span>
               <p class="description description-scroll__text">
@@ -304,63 +314,88 @@
                  Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев.
               </p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
-
-
-
-      <div class="popup popup_type_login">
+      <div class="popup popup_type_recomendation-place">
         <div class="popup__container popup__container_form">
-          <button
-            type="button"
-            aria-label="Закрыть"
-            class="button-close popup__btn-close"
-          ></button>
-          <h2 class="popup__title title">Вход</h2>
-          <div class="popup__description-container">
-            <p class="popup__description description">
-              Вход в личный кабинет доступен наставникам программы «Старшие
-              Братья Старшие Сёстры».
-            </p>
-
-            <p class="popup__description description">
-              Пожалуйста, введите логин и пароль из письма. Если вам не
-              приходило письмо, свяжитесь с вашим куратором.
-            </p>
-          </div>
-          <form class="popup__form" name="form-login" novalidate>
+          <h2 class="popup__title title popup__title_type_recomendation">
+            Если вы были в интересном месте и хотите порекомендовать его другим наставникам –
+            <span class="clickable-header togo-page__clickable-header togo-page__clickable-header_place_popup">
+            заполните форму</span>, и мы добавим вашу рекомендацию.
+          </h2>
+          <form class="popup__form" name="form-recomendation-place" novalidate>
             <fieldset class="popup__set">
-              <label class="popup__field">
+              <label class="popup__field popup__field_place_recomendation">
                 <input
                   type="text"
-                  name="login"
-                  placeholder="Логин"
+                  name="title"
+                  placeholder="Название*"
                   class="popup__input caption"
                   required
                   minlength="2"
                   maxlength="40"
                 />
+
+                <input
+                type="url"
+                name="link"
+                placeholder="Сайт"
+                class="popup__input caption"
+                />
               </label>
 
-              <label class="popup__field">
+              <label class="popup__field popup__field_place_recomendation">
                 <input
-                  type="password"
-                  name="password"
-                  placeholder="Пароль"
+                  type="text"
+                  name="address"
+                  placeholder="Адрес*"
                   class="popup__input caption"
                   required
                   minlength="8"
-                  maxlength="40"
                 />
               </label>
             </fieldset>
-            <p class="caption popup__caption">Забыли пароль?</p>
-            <button type="submit" class="button popup__btn-submit">
-              Войти
-            </button>
+            <div class="popup__togo-bottom-container">
+              <button
+                type="button"
+                aria-label="Добавить фото"
+                class="button button-add"
+              ></button>
+              <p class="caption popup__add-photo-caption">Добавить фото</p>
+              <button type="submit" class="button popup__btn-submit">
+                Отправить
+              </button>
+            </div>
+
+
           </form>
+        </div>
+      </div>
+
+      <div class="popup popup_type_city">
+        <div class="popup__container popup__container_city">
+          <h2 class="popup__city-title title">Выберите ваш город</h2>
+          <div class="popup__city-container">
+            <div class="popup__capitals">
+              <p class="caption popup__city-caption">Москва</p>
+              <p class="caption popup__city-caption">Санкт-Петербург</p>
+            </div>
+            <div class="popup__other-cities">
+              <p class="caption popup__city-caption">Алексин</p>
+              <p class="caption popup__city-caption">Барнаул</p>
+              <p class="caption popup__city-caption">Екатеринбург</p>
+              <p class="caption popup__city-caption">Зубцов</p>
+              <p class="caption popup__city-caption">Калининград</p>
+              <p class="caption popup__city-caption">Киреевск</p>
+              <p class="caption popup__city-caption">Коломна</p>
+              <p class="caption popup__city-caption">Новомосковск</p>
+              <p class="caption popup__city-caption">Орехово-Зуево</p>
+              <p class="caption popup__city-caption">Тверь</p>
+              <p class="caption popup__city-caption">Тула</p>
+            </div>
+          </div>
         </div>
       </div>
 
