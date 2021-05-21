@@ -15,9 +15,6 @@ export default class Select {
 
   _handleSelectItem(evt) {
     if (evt.target.classList.contains('select-activity__item')) {
-      if (!this._title.classList.contains('select-activity__title_opened')) {
-        this._title.classList.add('select-activity__title_opened');
-      }
       this._title.textContent = evt.target.textContent;
       this._toggleClassList();
       this._listItems.removeEventListener('click', this._handleSelectItem);
@@ -26,6 +23,9 @@ export default class Select {
 
 
   _toggleClassList() {
+    if (!this._title.classList.contains('select-activity__title_opened')) {
+      this._title.classList.add('select-activity__title_opened');
+    }
     this._listItems.classList.toggle("select-activity__items_opened");
     this._selectElement.classList.toggle("select-activity_opened");
     this._buttonSelect.classList.toggle("select-activity__icon_type_opened");
