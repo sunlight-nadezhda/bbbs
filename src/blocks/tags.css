@@ -22,7 +22,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1370px) {
   .tags {
     display: inline-block;
     white-space: nowrap;

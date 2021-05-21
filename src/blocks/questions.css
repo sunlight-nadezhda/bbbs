@@ -19,6 +19,8 @@
   position: relative;
   padding: 50px;
   border-radius: 30px;
+  min-height: 189px;
+  box-sizing: border-box;
 }
 
 .questions__tag {
@@ -26,6 +28,7 @@
   background-color: var(--color-background);
   max-width: 65px;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .questions__button {
@@ -40,6 +43,31 @@
   background-position: center;
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translate(100%, -50%);
+  /* top: 50%;
+  transform: translate(100%, -50%); */
+  bottom: 50%;
+  transform: translate(100%, 50%);
+}
+
+@media screen and (max-width: 1370px) {
+  .questions {
+    padding: 0;
+  }
+
+  .questions__item {
+    max-width: 770px;
+  }
+
+  .questions__summary {
+    min-height: 128px;
+  }
+
+  .questions__button {
+    width: 50px;
+    height: 50px;
+    background-size: 12px;
+    transform: translate(0);
+    bottom: 15px;
+    right: 15px;
+  }
 }
