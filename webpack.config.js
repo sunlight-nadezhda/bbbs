@@ -83,6 +83,10 @@ module.exports = {
       template: './src/questions.html',
       filename: 'questions.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/read-and-view.html',
+      filename: 'read-and-view.html'
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
