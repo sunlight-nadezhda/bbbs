@@ -64,3 +64,36 @@
     padding: 10px 14px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .question-form__field {
+    width: 75%;
+  }
+
+  .question-form__feedback {
+    min-width: 65%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .question-form__title {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .question-form__field {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .question-form__button {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .question-form__feedback {
+    min-width: 90%;
+  }
+}
