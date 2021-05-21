@@ -24,11 +24,17 @@ const popupRecomendationPlace = document.querySelector(
   ".popup_type_recomendation-place"
 );
 const selectActivityElement = document.querySelector(".select-activity");
-const textAreaPopupRecomendation =
-  popupRecomendationPlace.querySelector(".popup__textarea");
-const pseudotextArea = popupRecomendationPlace.querySelector(
-  ".popup__pseudo-textarea"
-);
+// const tagsElement = document.querySelector(".tags");
+
+let textAreaPopupRecomendation;
+if (popupRecomendationPlace) {
+  textAreaPopupRecomendation = popupRecomendationPlace.querySelector(".popup__textarea");
+}
+
+let pseudotextArea;
+if (popupRecomendationPlace) {
+  pseudotextArea = popupRecomendationPlace.querySelector(".popup__pseudo-textarea");
+}
 
 export {
   menuSettings,
@@ -43,5 +49,6 @@ export {
   selectActivityElement,
   videoBigCardSelector,
   popupCalendar,
-  pseudotextArea
+  pseudotextArea,
+  // tagsElement
 };

@@ -16,7 +16,18 @@ import {
   widgetSelector,
   selectActivityElement,
   videoBigCardSelector,
+  // tagsElement
 } from "../scripts/utils/utils.js";
+
+// document.documentElement.scrollTop = document.body.scrollTop = 1000;
+// document.documentElement.scrollLeft = document.body.scrollLeft = 50;
+
+// tagsElement.scrollLeft = 100;
+// tagsElement.scrollTop = 1000;
+
+// if (tagsElement) {
+//   console.log(tagsElement.scrollLeft, tagsElement.scrollTop);
+// } else console.log("Не найден tagsElement");
 
 const menu = new Menu(menuSettings);
 menu.setEventListeners();
@@ -24,8 +35,10 @@ menu.setEventListeners();
 const widget = new Widget(widgetSelector);
 widget.setEventListeners();
 
-const select = new Select(selectActivityElement);
-select.setEventListeners();
+if (selectActivityElement) {
+  const select = new Select(selectActivityElement);
+  select.setEventListeners();
+}
 
 //Работа с попапом регистрации
 function openPopup(ModalWindowForm) {
@@ -49,9 +62,8 @@ function closePopup(evt) {
 }
 
 function setSizeOfTextarea(evt) {
-
   if (pseudotextArea.offsetWidth != selectActivityElement.offsetWidth) {
-    pseudotextArea.style.width = selectActivityElement.offsetWidth + 'px';
+    pseudotextArea.style.width = selectActivityElement.offsetWidth + "px";
   }
   pseudotextArea.innerHTML = evt.target.value;
   let height = pseudotextArea.offsetHeight;
@@ -62,7 +74,7 @@ function setSizeOfTextarea(evt) {
     height = 48;
   }
 
-  textAreaPopupRecomendation.style.height = height + 'px';
+  textAreaPopupRecomendation.style.height = height + "px";
 }
 
 function doSomething(evt) {
@@ -71,12 +83,15 @@ function doSomething(evt) {
     evt.target.classList.contains("popup") ||
     evt.target.classList.contains("popup__btn-return")
   ) {
-    if (popupRecomendationPlace.classList.contains('popup__opened')) {
-      textAreaPopupRecomendation.removeEventListener("keyup", setSizeOfTextarea);
+    if (popupRecomendationPlace.classList.contains("popup__opened")) {
+      textAreaPopupRecomendation.removeEventListener(
+        "keyup",
+        setSizeOfTextarea
+      );
     }
     closePopup(evt);
   }
-  
+
   if (evt.target.classList.contains("calendar__full-view-button")) {
     openPopup(popupCalendar);
   }
