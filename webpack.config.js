@@ -84,6 +84,10 @@ module.exports = {
       filename: 'questions.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/questions_rubric.html',
+      filename: 'questions_rubric.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/read-and-view.html',
       filename: 'read-and-view.html'
     }),

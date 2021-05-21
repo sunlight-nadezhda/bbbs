@@ -25,7 +25,7 @@
               >
             </li>
             <li class="header__menu-link">
-              <a class="menu-text" href="./questions_rubric.html" target="_self"
+              <a class="menu-text" href="./questions.html" target="_self"
                 >Вопросы</a
               >
             </li>
@@ -118,19 +118,19 @@
       <h1 class="page-title">Ответы на вопросы</h1>
       <section class="tags">
         <div class="tags__row">
-          <button class="button button_inactive-pressed">Все</button>
+          <button class="button button_inactive">Все</button>
           <button class="button button_inactive">Первая встреча</button>
           <button class="button button_inactive">Вопросы детей</button>
           <button class="button button_inactive">Воспитатели / опекуны</button>
           <button class="button button_inactive">Сомнения</button>
-          <button class="button button_inactive">Сложности</button>
+          <button class="button button_inactive-pressed">Сложности</button>
           <button class="button button_inactive">Подарки</button>
           <div class="tags__rect-transparency tags__rect-transparency_type_row"></div>
         </div>
         <div class="tags__row">
           <button class="button button_inactive">Влияние на ребенка</button>
           <button class="button button_inactive">Времяпровождение</button>
-          <button class="button button_inactive">Ответственность</button>
+          <button class="button button_inactive-pressed">Ответственность</button>
           <button class="button button_inactive">Завершение отношений</button>
           <button class="button button_inactive">Первая встреча</button>
           <button class="button button_inactive">Вопросы детей</button>
@@ -159,9 +159,11 @@
               Я боюсь, что ребёнок ко мне слишком сильно привяжется. Что делать?
             </h2>
             <p class="tag rubric questions__tag">рубрика</p>
-            <button type="button" aria-label="Развернуть" class="button questions__button"></button>
+            <button type="button" aria-label="Развернуть" class="button questions__button questions__button_type_close"></button>
           </div>
-          <div class="questions__details"></div>
+          <div class="description questions__details questions__details_opened">
+            Настоящие дружеские отношения строятся на&nbsp;взаимном интересе, доверии и&nbsp;привязанности. Когда наставник для ребенка становится именно другом, а&nbsp;не&nbsp;просто знакомым или волонтером, то&nbsp;подопечный начинает быть искренне заинтересован в&nbsp;общении, начинает ждать встреч, звонить по&nbsp;телефону. Но&nbsp;тут важно, чтобы наставник оставался именно в&nbsp;роли друга, старшего брата или сестры, а&nbsp;не&nbsp;потенциального родителя. Перед включением ребенка в&nbsp;программу кураторы обязательно объясняют ребенку, кто такой наставник и&nbsp;какую роль он&nbsp;может сыграть в&nbsp;его жизни. Конечно, здесь многое зависит от&nbsp;умения самого наставника выстраивать отношения и&nbsp;границы, но, если человек сомневается в&nbsp;своих навыках, то&nbsp;в&nbsp;рамках нашей программы проводятся поддерживающие мероприятия, которые развивают компетенции наставников и&nbsp;их&nbsp;коммуникативные способности, которые помогают в&nbsp;общении с&nbsp;детьми, а&nbsp;также есть всегда возможность обратиться к&nbsp;куратору программы.
+          </div>
         </li>
         <li class="questions__item">
           <div class="questions__summary">
@@ -194,14 +196,6 @@
           <div class="questions__details"></div>
         </li>
       </ul>
-
-      <section class="question-form">
-        <form class="question-form__send-question">
-          <label for="question" class="title question-form__title">Если вы не нашли ответ на свой вопрос — напишите нам, и мы включим его в список</label>
-          <input type="text" id="question" name="question" class="question-form__field" placeholder="Введите вопрос"><button type="button" class="button button_disabled question-form__button">Отправить</button>
-        </form>
-        <div class="title question-form__feedback question-form__feedback_inactive">Спасибо! Мы приняли ваш вопрос.</div>
-      </section>
 
       <div class="popup popup_type_login">
         <div class="popup__container popup__container_form">
