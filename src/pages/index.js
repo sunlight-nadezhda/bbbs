@@ -11,7 +11,9 @@ import {
   pseudotextArea,
   popupCalendar,
   popupSuccess,
+  popupTogoSuccess,
   popupRecomendationPlace,
+  addressPopupRecomendationPlace,
   textAreaPopupRecomendation,
   widgetSelector,
   selectActivityElement,
@@ -77,17 +79,29 @@ function setSizeOfTextarea(evt) {
   textAreaPopupRecomendation.style.height = height + "px";
 }
 
+function setPopupRecomendationPlaceSettings() {
+  
+  if (window.matchMedia("(max-width: 830px)").matches) {
+    textAreaPopupRecomendation.placeholder = 'Комментарий*';
+    addressPopupRecomendationPlace.classList.add('popup__field-address_inactive');
+  } else {
+    textAreaPopupRecomendation.placeholder = 'Комментарий* Поделитесь впечатлениями о проведенном времени';
+    addressPopupRecomendationPlace.classList.remove('popup__field-address_inactive');
+  }
+}
+
 function doSomething(evt) {
   if (
     evt.target.classList.contains("popup__btn-close") ||
     evt.target.classList.contains("popup") ||
     evt.target.classList.contains("popup__btn-return")
   ) {
-    if (popupRecomendationPlace.classList.contains("popup__opened")) {
+    if (popupRecomendationPlace && popupRecomendationPlace.classList.contains("popup__opened")) {
       textAreaPopupRecomendation.removeEventListener(
         "keyup",
         setSizeOfTextarea
       );
+      window.removeEventListener('resize', setPlaceHolderText);
     }
     closePopup(evt);
   }
@@ -110,8 +124,21 @@ function doSomething(evt) {
 
   if (evt.target.classList.contains("togo-page__clickable-header_place_page")) {
     openPopup(popupRecomendationPlace);
+    if (popupRecomendationPlace.offsetWidth < 770) {
+      textAreaPopupRecomendation.placeholder = 'Комментарий*';
+      addressPopupRecomendationPlace.classList.add('popup__field-address_inactive');
+    }
     textAreaPopupRecomendation.addEventListener("keyup", setSizeOfTextarea);
+    window.addEventListener('resize', setPopupRecomendationPlaceSettings);
+    
   }
+
+  if (evt.target.classList.contains("popup__btn-submit_place_togo")) {
+    evt.preventDefault();
+    document.querySelector(".popup_opened").classList.remove("popup_opened");
+    openPopup(popupTogoSuccess);
+  }
+
 }
 
 //Слушатели

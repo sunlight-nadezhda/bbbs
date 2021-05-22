@@ -13,3 +13,10 @@
 .clickable-header:hover {
   color: var(--color-blue);
 }
+
+@media screen and (max-width: 1380px) {
+  .clickable-header {
+    font-size: 19px;
+    line-height: 1.21;
+  }
+}

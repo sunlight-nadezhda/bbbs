@@ -23,6 +23,8 @@ const popupSuccess = document.querySelector(".popup_type_success");
 const popupRecomendationPlace = document.querySelector(
   ".popup_type_recomendation-place"
 );
+const addressPopupRecomendationPlace = popupRecomendationPlace.querySelector('.popup__field-address');
+const popupTogoSuccess = document.querySelector(".popup_type_togo-success");
 const selectActivityElement = document.querySelector(".select-activity");
 // const tagsElement = document.querySelector(".tags");
 
@@ -44,7 +46,9 @@ export {
   popupConfirm,
   textAreaPopupRecomendation,
   popupSuccess,
+  popupTogoSuccess,
   popupRecomendationPlace,
+  addressPopupRecomendationPlace,
   widgetSelector,
   selectActivityElement,
   videoBigCardSelector,

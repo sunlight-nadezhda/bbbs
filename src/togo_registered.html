@@ -348,7 +348,7 @@
               </label>
             </fieldset>
 
-            <label class="popup__field popup__field_place_recomendation">
+            <label class="popup__field popup__field_place_recomendation popup__field-address">
               <input
                 type="text"
                 name="address"
@@ -360,35 +360,37 @@
             </label>
 
             <fieldset class="popup__set popup__set_place_recomendation">
-              <div class="popup__choice-container">
-                <label for="boy" class="popup__label-choice">
-                  <input type="radio" class="popup__input-radio" name="gender" id="boy" value="boy">
-                  <span class="guide-subtitle guide-subtitle_place_popup-recomendation popup__radio-pseudo-item popup__radio-pseudo-item_type_error"></span>
-                  <span class="popup__input-radio-text">Мальчик</span>
-                </label>
+              <div class="popup__outer-choice-container">
+                <div class="popup__choice-container">
+                  <label for="boy" class="popup__label-choice">
+                    <input type="radio" class="popup__input-radio" name="gender" id="boy" value="boy">
+                    <span class="guide-subtitle guide-subtitle_place_popup-recomendation popup__radio-pseudo-item popup__radio-pseudo-item_type_error"></span>
+                    <span class="popup__input-radio-text guide-subtitle guide-subtitle_color_light-gray">Мальчик</span>
+                  </label>
+                </div>
+
+                <div class="popup__choice-container">
+                  <label for="girl" class="popup__label-choice">
+                    <input type="radio" class="popup__input-radio" name="gender" id="girl" value="girl">
+                    <span class="guide-subtitle guide-subtitle_place_popup-recomendation popup__radio-pseudo-item"></span>
+                    <span class="popup__input-radio-text guide-subtitle guide-subtitle_color_light-gray">Девочка</span>
+                  </label>
+                </div>
               </div>
 
-              <div class="popup__choice-container">
-                <label for="girl" class="popup__label-choice">
-                  <input type="radio" class="popup__input-radio" name="gender" id="girl" value="girl">
-                  <span class="guide-subtitle guide-subtitle_place_popup-recomendation popup__radio-pseudo-item"></span>
-                  <span class="popup__input-radio-text">Девочка</span>
-                </label>
-              </div>
 
-
-              <label class="popup__field popup__field_place_recomendation">
+              <label class="popup__field popup__input_type_age popup__field_place_recomendation">
                 <input
                 type="url"
                 name="link"
                 placeholder="Возраст*"
                 required
-                class="popup__input guide-subtitle guide-subtitle_place_popup-recomendation"
+                class="popup__input  guide-subtitle guide-subtitle_place_popup-recomendation"
                 />
               </label>
             </fieldset>
 
-            <div class="select-container">
+            <div class="select-container guide-subtitle guide-subtitle_color_light-gray">
               <ul class="select-activity" name="type-of-activity" id="type-of-activity" required>
                 <li class="select-activity__title">Тип отдыха*</li>
                 <div class="select-activity__items">
@@ -417,12 +419,29 @@
                 aria-label="Добавить фото"
                 class="button button-add"
               ></button>
-              <p class="caption popup__add-photo-caption">Добавить фото</p>
-              <button type="submit" class="button popup__btn-submit">
+              <p class="guide-subtitle guide-subtitle_color_light-gray popup__add-photo-caption">Добавить фото</p>
+              <button type="submit" class="button popup__btn-submit popup__btn-submit_place_togo">
                 Отправить
               </button>
             </div>
           </form>
+        </div>
+      </div>
+
+      <div class="popup popup_type_togo-success">
+        <div class="popup__container popup__container_form">
+          <button
+            type="button"
+            aria-label="Закрыть"
+            class="button-close popup__btn-close"
+          ></button>
+          <div class="popup__image-success"></div>
+          <div class="popup__description-container">
+            <p class="popup__description title">
+              Спасибо, мы проверим информацию, и скоро все пользователи смогут увидеть вашу рекомендацию
+
+            </p>
+          </div>
         </div>
       </div>
 

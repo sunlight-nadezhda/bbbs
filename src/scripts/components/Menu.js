@@ -28,7 +28,9 @@ export default class Menu {
     this._menuSettings.menuButton.classList.toggle("header__item_inactive");
     this._menuSettings.personalAccountButton.classList.toggle("header__item_active");
     this._menuSettings.content.classList.toggle("content_inactive");
-    this._menuSettings.headerSearch.classList.toggle("header__item_inactive");
+    if (this._menuSettings.headerSearch) {
+      this._menuSettings.headerSearch.classList.toggle("header__item_inactive");
+    }
   }
 
   _closeColumnMenu() {

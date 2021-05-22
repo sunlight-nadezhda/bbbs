@@ -122,8 +122,9 @@
 
 .popup__title_type_recomendation {
   text-align: center;
-  min-width: 710px;
+  width: calc(100% + 140px);
   padding-top: 30px;
+  margin: 0 0 40px;
 }
 
 .popup__title_type_confirm {
@@ -190,13 +191,17 @@
 .popup__field {
   padding: 0;
   width: 100%;
-  min-height: 68px;
+  height: 68px;
   font-family: inherit;
   border: none;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
+}
+
+.popup__field-address_inactive {
+  display: none;
 }
 
 .popup__field_type_behind {
@@ -212,9 +217,14 @@
   margin-right: 0;
 }
 
+.popup__outer-choice-container {
+  display: flex;
+  width: 100%;
+}
+
 .popup__choice-container {
   box-sizing: border-box;
-  padding: 8px 20px;
+  padding: 13px 20px 16px;
   background-color: var(--color-background);
   color: var(--color-light-grey);
   border-radius: 30px;
@@ -300,8 +310,12 @@
   box-sizing: border-box;
   font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
   width: 100%;
-  padding: 8px 20px;
+  padding: 13px 20px 16px;
   color: var(--color-dark-grey);
+}
+
+.popup__input_type_age {
+  max-width: 170px;
 }
 
 .popup__textarea {
@@ -355,10 +369,12 @@
 }
 
 .popup__btn-submit {
-  min-width: 85px;
-  min-height: 48px;
   color: var(--color-light-grey);
   border-color: var(--color-light-grey);
+}
+
+.popup__btn-submit_place_togo {
+
 }
 
 .popup__image-success {
@@ -380,13 +396,14 @@
 
 .popup__add-photo-caption {
   margin: 0 auto 0 20px;
+  color: var(--color-light-grey);
+  align-self: center;
+
 }
 
 .popup__error-element {
   color: var(--color-error);
 }
-
-
 
 @media screen and (max-width: 1440px) {
   .popup__container_video {
@@ -407,6 +424,9 @@
 
   .popup__video-item {
     height: 525px;
+  }
+  .popup__title_type_recomendation {
+    margin-bottom: 30px;
   }
 }
 
@@ -433,6 +453,7 @@
 
   .popup__input {
     height: 40px;
+    padding: 10px 20px 13px;
   }
 
   .popup__field {
@@ -446,6 +467,21 @@
   .popup__btn-submit {
     min-width: 66px;
     min-height: 40px;
+  }
+
+  .popup__choice-container {
+    height: 40px;
+    padding: 10px 20px 13px;
+    margin-right: 10px;
+  }
+
+  .popup__textarea {
+    height: 40px;
+    padding: 10px 20px 13px;
+  }
+
+  .popup__togo-bottom-container {
+    margin-top: 10px;
   }
 }
 
@@ -481,6 +517,42 @@
     width: 207px;
     height: 85px;
   }
+
+  .popup__title_type_recomendation {
+    width: 100%;
+  }
+
+  .popup__add-photo-caption {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .popup__set_place_recomendation {
+    flex-direction: column;
+  }
+
+  .popup__input_type_age {
+    max-width: unset;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .popup__choice-container:last-of-type {
+    margin-right: 0;
+  }
+
+  .popup__radio-pseudo-item {
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+  }
+
+  .popup__container_form {
+    width: calc((100vw - 30px));
+  }
+
+
 }
 
 @media screen and (max-width: 360px) {

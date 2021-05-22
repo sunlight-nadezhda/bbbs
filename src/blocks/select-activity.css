@@ -1,11 +1,10 @@
 .select-activity {
   width: 100%;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14);
   border-radius: 30px;
   background-color: var(--color-background);
-  min-height: 48px;
+  height: 48px;
   border: none;
-  padding: 15px 20px;
+  padding: 13px 20px 16px;
   font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
   list-style: none;
   color: var(--color-light-grey);
@@ -26,6 +25,7 @@
 
 .select-activity_opened {
   border-radius: 30px 30px 0 0;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14);
 }
 
 .select-activity__title_opened {
@@ -72,8 +72,21 @@
   height: 22px;
   background-image:url('../images/arrow-select.svg');
   background-repeat: no-repeat;
+  padding: 0;
 }
 
 .select-activity__icon_type_opened {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 830px) {
+  .select-activity {
+    height: 40px;
+    padding: 10px 20px 13px;
+    margin-bottom: 10px;
+  }
+
+  .select-activity__icon {
+    top: 8px;
+  }
 }
