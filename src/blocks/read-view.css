@@ -1,0 +1,111 @@
+.read-view {
+  gap: 80px;
+}
+
+.read-view__block-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.read-view__subsubtitle-container {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-blue);
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.read-view__subsubtitle {
+  color: var(--color-blue);
+  width: 100%;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.read-view__arrows-container {
+  margin-left: auto;
+  align-self: center;
+  min-width: 99px;
+}
+
+.read-view__button-arrow {
+  margin-right: 15px;
+  color: var(--color-light-grey);
+}
+
+.read-view__button-arrow_type_active {
+  background-image: url("../images/icon_arrow-active.svg");
+}
+
+.read-view__button-arrow:last-of-type {
+  transform: rotate(180deg);
+  margin: 0;
+}
+
+.read-view__cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: fit-content;
+  column-gap: 30px;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.read-view__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1420px) {
+  .read-view__cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .read-view__item:nth-child(n+3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .read-view__subsubtitle {
+    text-align: left;
+    padding-left: 0;
+  }
+  .read-view__button-arrow {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  .read-view__arrows-container {
+    min-width: 70px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .read-view__cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .read-view__subsubtitle-container {
+    padding-bottom: 10px;
+    justify-content: flex-start;
+  }
+
+  .read-view__item:nth-child(n+2) {
+    display: none;
+  }
+
+  .read-view {
+    gap: 30px;
+  }
+}

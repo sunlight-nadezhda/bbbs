@@ -9,6 +9,7 @@
   object-fit: cover;
   height: 239px;
   border-radius: 30px 30px 0 0;
+  overflow: hidden;
 }
 
 .video-card__description {
@@ -22,6 +23,7 @@
   background-color: #fff;
   box-sizing: border-box;
   position: relative;
+  width: 100%;
 }
 
 .video-card__title {
@@ -32,6 +34,7 @@
   text-align: center;
   margin-top: 5px;
   margin-bottom: auto;
+  color:var(--color-dark-grey);
 }
 
 .video-card__containter {
@@ -47,6 +50,10 @@
   .video-card:nth-child(n+4) {
     display: none;
   }
+
+  .video-card_place_read-view:nth-child(n+4) {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1480px) {
@@ -58,6 +65,10 @@
 @media screen and (max-width: 1435px) {
   .video-card:nth-child(n+3) {
     display: none;
+  }
+
+  .video-card_place_read-view:nth-child(n+3) {
+    display: flex;
   }
 }
 
@@ -71,6 +82,10 @@
 @media screen and (max-width: 860px) {
   .video-card:nth-child(n+2) {
     display: none;
+  }
+
+  .video-card_place_read-view:nth-child(n+2) {
+    display: flex;
   }
 
   .video-card__image {
