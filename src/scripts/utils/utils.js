@@ -37,11 +37,6 @@ if (popupRecomendationPlace) {
   pseudotextArea = popupRecomendationPlace.querySelector(".popup__pseudo-textarea");
 }
 
-
-if (popupRecomendationPlace) {
-  
-}
-
 export {
   menuSettings,
   popupLogin,

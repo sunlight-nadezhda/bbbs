@@ -92,6 +92,26 @@ module.exports = {
       template: './src/read-and-view.html',
       filename: 'read-and-view.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/questions.html',
+      filename: 'guide.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/questions.html',
+      filename: 'videos.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/questions.html',
+      filename: 'articles.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/questions.html',
+      filename: 'films.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/questions.html',
+      filename: 'books.html'
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
