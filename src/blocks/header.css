@@ -184,6 +184,7 @@
   margin: 0;
   padding: 20px;
   display: grid;
+  justify-items: start;
   row-gap: 10px;
   align-items: start;
   position: absolute;
@@ -197,6 +198,7 @@
   transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
   box-sizing: border-box;
   visibility: hidden;
+  z-index: 2;
 }
 
 .header__menu-link_type_read-view:hover .header__read-view-container {
