@@ -4,10 +4,6 @@
   max-width: 570px;
 }
 
-.text-card_place_togo {
-  max-height: 570px;
-}
-
 .text-card__title {
   width: 100%;
   display: flex;
