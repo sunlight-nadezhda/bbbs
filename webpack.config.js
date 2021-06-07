@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  // devtool: 'source-map',
   entry: { main: './src/pages/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -70,6 +71,46 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: 'about.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/togo.html',
+      filename: 'togo.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/togo_registered.html',
+      filename: 'togo_registered.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/questions.html',
+      filename: 'questions.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/questions_rubric.html',
+      filename: 'questions_rubric.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/read-and-view.html',
+      filename: 'read-and-view.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/guide.html',
+      filename: 'guide.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles.html',
+      filename: 'videos.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/questions.html',
+      filename: 'articles.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/films.html',
+      filename: 'films.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/books.html',
+      filename: 'books.html'
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({

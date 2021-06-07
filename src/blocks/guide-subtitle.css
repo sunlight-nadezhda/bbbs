@@ -10,6 +10,20 @@
   cursor: pointer;
 }
 
+.guide-subtitle_place_popup-recomendation {
+  cursor: unset;
+  color: #000;
+}
+
+.guide-subtitle_color_light-gray {
+  color: var(--color-light-grey);
+}
+
+.guide-subtitle_place_popup-recomendation::placeholder {
+  color: var(--color-light-grey);
+  cursor: unset;
+}
+
 .guide-subtitle:hover {
   color: var(--color-dark);
 }
@@ -17,4 +31,11 @@
 .guide-subtitle_place_search {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .guide-subtitle {
+    font-size: 12px;
+    line-height: 1.41;
+  }
 }

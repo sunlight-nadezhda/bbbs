@@ -9,6 +9,7 @@
   object-fit: cover;
   height: 239px;
   border-radius: 30px 30px 0 0;
+  overflow: hidden;
 }
 
 .video-card__description {
@@ -22,6 +23,7 @@
   background-color: #fff;
   box-sizing: border-box;
   position: relative;
+  width: 100%;
 }
 
 .video-card__title {
@@ -32,6 +34,7 @@
   text-align: center;
   margin-top: 5px;
   margin-bottom: auto;
+  color:var(--color-dark-grey);
 }
 
 .video-card__containter {
@@ -43,28 +46,13 @@
   transform: translateX(-50%);
 }
 
-.video-card__category {
-  height: 17px;
-  max-width: 120px;
-  font-size: 10px;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.6);
-  font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 2px 7px;
-  box-sizing: content-box;
-  border-radius: 15px;
-  text-transform: uppercase;
-}
-
 @media screen and (max-width: 1910px) {
   .video-card:nth-child(n+4) {
     display: none;
+  }
+
+  .video-card_place_read-view:nth-child(n+4) {
+    display: flex;
   }
 }
 
@@ -77,6 +65,10 @@
 @media screen and (max-width: 1435px) {
   .video-card:nth-child(n+3) {
     display: none;
+  }
+
+  .video-card_place_read-view:nth-child(n+3) {
+    display: flex;
   }
 }
 
@@ -92,6 +84,10 @@
     display: none;
   }
 
+  .video-card_place_read-view:nth-child(n+2) {
+    display: flex;
+  }
+
   .video-card__image {
     height: 163px;
   }
@@ -99,7 +95,7 @@
 }
 
 @media screen and (max-width: 460px) {
-  
+
   .video-card__description {
     padding-left: 15px;
     padding-right: 15px;

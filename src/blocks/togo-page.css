@@ -1,0 +1,133 @@
+.togo-page {
+  justify-content: center;
+}
+
+.togo-page__choice-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.togo-page__activity-container {
+  display: flex;
+  flex:none;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 15px;
+  width: max-content;
+  position: relative;
+}
+
+.togo-page__age-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  width: max-content;
+  position: relative;
+}
+
+.togo-page__rect-transparency {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  background: linear-gradient(180deg, #F7F5F5 0%, rgba(255, 255, 255, 0) 100%);
+  transform: rotate(90deg);
+  display: none;
+}
+
+.togo-page__card-article-registered {
+  max-width: 770px;
+  padding: 50px 30px;
+  background-color: #fff;
+  justify-self: center;
+  margin-top: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  /* min-height: 90px; */
+}
+
+.togo-page__clickable-header {
+  transition: opacity .2s ease-in-out;
+}
+
+.togo-page__clickable-header_place_page {
+  color:var(--color-blue);
+}
+
+.togo-page__clickable-header_place_popup {
+  color:var(--color-dark);
+}
+
+.togo-page__clickable-header:hover{
+  opacity: 0.6;
+}
+
+.togo-page__block-article {
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .togo-page__choice-container {
+    margin-top: -10px;
+  }
+
+  .togo-page__block-article {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .togo-page__choice-container {
+    align-items: flex-start;
+    align-self: flex-start;
+    width: calc(100% + 127px);
+  }
+
+  .togo-page__activity-container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .togo-page__age-container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+
+@media screen and (max-width: 830px) {
+
+  .togo-page__rect-transparency_type_activity {
+    display: block;
+  }
+
+  .togo-page__block-article {
+    margin-top: 4px;
+  }
+
+  .togo-page__card-article-registered {
+    margin-top: 4;
+  }
+
+}
+
+@media screen and (max-width: 680px) {
+
+  .togo-page__choice-container {
+    width: calc(100% + 15px);
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .togo-page__rect-transparency_type_age {
+    display: block;
+  }
+}

@@ -96,6 +96,8 @@
 .calendar__month-container {
   margin-top: 10px;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -119,5 +121,16 @@
   }
   .calendar__sing-up-button {
     width: 100px;
+  }
+
+  .calendar__month-container {
+    margin-top: -10px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .calendar__month-container {
+    margin-bottom: 4px;
   }
 }

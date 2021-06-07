@@ -1,7 +1,7 @@
 .text-card {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  max-width: 570px;
+  max-width: 570px; */
 }
 
 .text-card__title {
@@ -37,9 +37,6 @@
   position: relative;
 }
 
-.text-card__description {
-}
-
 .text-card__clickable-element {
   margin-top: 23px;
   align-self: center;
@@ -51,6 +48,7 @@
   }
 }
 
+
 @media screen and (max-width: 1280px) {
   .text-card__clickable-element {
     margin-top: 15px;
@@ -61,5 +59,18 @@
   }
   .text-card__container {
     height: calc(100% - 70px);
+  }
+}
+
+
+@media screen and (max-width: 1420px) {
+  .text-card_place_togo:nth-child(n+3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .text-card_place_togo:nth-child(n+2) {
+    display: none;
   }
 }

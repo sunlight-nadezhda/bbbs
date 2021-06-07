@@ -8,11 +8,23 @@
   margin: 0;
   color: var(--color-blue);
   cursor: pointer;
+  transition: opacity .2s ease-in-out;
 }
+
+.clickable-element_place_header {
+  color: #000;
+}
+
 
 .clickable-element:hover {
   color: var(--color-dark);
+  opacity: 0.6;
 }
+
+.clickable-element_place_header:hover {
+  color: #000;
+}
+
 
 @media screen and (max-width: 1024px) {
   .clickable-element {
@@ -20,3 +32,5 @@
     line-height: 1.42;
   }
 }
+
+

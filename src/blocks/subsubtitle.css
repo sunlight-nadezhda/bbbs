@@ -1,0 +1,14 @@
+.subsubtitle {
+  font-family: 'Proto-Grotesk-Ligth-Web', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 1.14;
+  margin: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .subsubtitle {
+    font-size: 23px;
+    line-height: 1.3;
+  }
+}

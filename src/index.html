@@ -29,10 +29,15 @@
                 >Вопросы</a
               >
             </li>
-            <li class="header__menu-link">
-              <a class="menu-text" href="./read-and-view.html" target="_self"
-                >Читать и смотреть</a
-              >
+            <li class="header__menu-link header__menu-link_type_read-view">
+              <a class="menu-text" href="./read-and-view.html" target="_self">Читать и смотреть</a>
+              <div class="header__read-view-container">
+                <a class="clickable-element clickable-element_place_header" href="./guide.html" target="_self">Справочник</a>
+                <a class="clickable-element clickable-element_place_header" href="./videos.html" target="_self">Видео</a>
+                <a class="clickable-element clickable-element_place_header" href="./articles.html" target="_self">Статьи</a>
+                <a class="clickable-element clickable-element_place_header" href="./films.html" target="_self">Фильмы</a>
+                <a class="clickable-element clickable-element_place_header" href="./books.html" target="_self">Книги</a>
+              </div>
             </li>
             <li class="header__menu-link">
               <a class="menu-text" href="./children-rights.html" target="_self"
@@ -141,10 +146,10 @@
         class="block-article"
         aria-label="Статья Сплав на байдарках в две строки"
       >
-        <article class="card-article card-article_color_yellow">
+        <div class="card-article card-article_color_yellow">
           <div class="card-article__content card-article__content_size_m">
-            <span class="button button_type_heading card-article__select"
-              >выбор наставника</span
+            <button type="button" aria-label="Выбор наставника" class="tag button-mentor"
+              >выбор наставника</button
             >
             <div class="card-article__text card-article__text_size_m">
               <h2 class="title card-article__title_size_m">
@@ -164,8 +169,8 @@
               >перейти на сайт</a
             >
           </div>
-        </article>
-        <div class="description-scroll">
+        </div>
+        <article class="description-scroll">
           <div
             class="
               description-scroll__container
@@ -201,7 +206,7 @@
               вопросов, жизнь меняется.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
       <article class="card-article card-article_color_light-blue">
@@ -226,8 +231,8 @@
           />
           <div class="video-card__description">
             <div class="video-card__containter">
-              <span class="video-card__category">Рубрика</span>
-              <span class="video-card__category">Рубрика</span>
+              <span class="tag rubric">Рубрика</span>
+              <span class="tag rubric">Рубрика</span>
             </div>
             <h2 class="title video-card__title">
               Жутко громко и запредельно близко
@@ -252,8 +257,8 @@
           />
           <div class="video-card__description">
             <div class="video-card__containter">
-              <span class="video-card__category">Рубрика</span>
-              <span class="video-card__category">Рубрика</span>
+              <span class="tag rubric">Рубрика</span>
+              <span class="tag rubric">Рубрика</span>
             </div>
             <h2 class="title video-card__title">Жизнь Кабачка</h2>
             <p class="video-card__caption caption">
@@ -276,8 +281,8 @@
           />
           <div class="video-card__description">
             <div class="video-card__containter">
-              <span class="video-card__category">Рубрика</span>
-              <span class="video-card__category">Рубрика</span>
+              <span class="tag rubric">Рубрика</span>
+              <span class="tag rubric">Рубрика</span>
             </div>
             <h2 class="title video-card__title">Волчок</h2>
             <p class="video-card__caption caption">
@@ -300,8 +305,8 @@
           />
           <div class="video-card__description">
             <div class="video-card__containter">
-              <span class="video-card__category">Рубрика</span>
-              <span class="video-card__category">Рубрика</span>
+              <span class="tag rubric">Рубрика</span>
+              <span class="tag rubric">Рубрика</span>
             </div>
             <h2 class="title video-card__title">
               Жутко громко и запредельно близко
@@ -354,21 +359,21 @@
             <h2 class="title widget-section__question">
               Я боюсь, что ребёнок ко мне слишком сильно привяжется. Что делать?
             </h2>
-            <p class="tag widget-section__tag">рубрика</p>
+            <p class="tag rubric widget-section__tag">рубрика</p>
           </div>
           <div class="widget-section__item">
             <h2 class="title widget-section__question">
               Возможно ли продлить срок участия в программе, если и я и мой
               «младший» хотим остаться в программе?
             </h2>
-            <p class="tag widget-section__tag">рубрика</p>
+            <p class="tag rubric widget-section__tag">рубрика</p>
           </div>
           <div class="widget-section__item">
             <h2 class="title widget-section__question">
               Что делать если Ваш младший решил закрыть пару, т.к. слишком занят
               с учебой и друзьями?
             </h2>
-            <p class="tag widget-section__tag">рубрика</p>
+            <p class="tag rubric widget-section__tag">рубрика</p>
           </div>
         </div>
       </section>

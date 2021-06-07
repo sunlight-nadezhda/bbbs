@@ -1,0 +1,52 @@
+.guide-block {
+}
+
+.guide-block__image {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.guide-block__image_type_circle {
+  border-radius: 50%;
+}
+
+.guide-block__image_type_semicircle {
+  border-radius: 50% 50% 3px 3px;
+}
+
+.guide-block__title {
+  text-align: center;
+  padding-top: 20px;
+  color: #1a1a1a;
+  max-width: 420px;
+}
+
+@media screen and (max-width: 1441px) {
+  .guide-block__image {
+    width: 370px;
+    height: 370px;
+  }
+  .guide-block__title {
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .guide-block__image {
+    width: 290px;
+    height: 290px;
+  }
+  .guide-block__title {
+    max-width: 290px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .guide-block__title {
+    padding-top: 10px;
+  }
+}

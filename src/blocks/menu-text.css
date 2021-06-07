@@ -7,6 +7,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+}
+
+.menu-text:hover {
+  opacity: 0.6;
 }
 
 .menu-text:active {

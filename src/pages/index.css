@@ -7,6 +7,9 @@
 @import url('../blocks/button.css');
 @import url('../blocks/button-arrow.css');
 @import url('../blocks/button-close.css');
+@import url('../blocks/button-mentor.css');
+@import url('../blocks/button-add.css');
+@import url('../blocks/rubric.css');
 
 @import url('../blocks/color-circles.css');
 @import url('../blocks/circle.css');
@@ -17,6 +20,7 @@
 @import url('../blocks/number.css');
 @import url('../blocks/page-title.css');
 @import url('../blocks/subtitle.css');
+@import url('../blocks/subsubtitle.css');
 @import url('../blocks/title.css');
 @import url('../blocks/description.css');
 @import url('../blocks/clickable-element.css');
@@ -55,3 +59,19 @@
 @import url('../blocks/about-page.css');
 @import url('../blocks/info-block.css');
 @import url('../blocks/text-card.css');
+
+@import url('../blocks/togo-page.css');
+@import url('../blocks/places-togo.css');
+
+@import url('../blocks/select-container.css');
+@import url('../blocks/select-activity.css');
+
+@import url('../blocks/tags.css');
+@import url('../blocks/questions.css');
+@import url('../blocks/question-form.css');
+
+@import url('../blocks/read-view.css');
+@import url('../blocks/guide-block.css');
+
+@import url('../blocks/page-subtitle.css');
+@import url('../blocks/pagination.css');

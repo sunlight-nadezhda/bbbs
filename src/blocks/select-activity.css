@@ -1,0 +1,92 @@
+.select-activity {
+  width: 100%;
+  border-radius: 30px;
+  background-color: var(--color-background);
+  height: 48px;
+  border: none;
+  padding: 13px 20px 16px;
+  font-family: "PTRootUIWebRegular", Helvetica, sans-serif;
+  list-style: none;
+  color: var(--color-light-grey);
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 0 20px;
+  box-sizing: border-box;
+  align-items: center;
+  z-index: 2;
+}
+
+.select-activity__title {
+  width: 100%;
+}
+
+.select-activity_opened {
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14);
+}
+
+.select-activity__title_opened {
+  color: #000;
+}
+
+.select-activity__items {
+  display: none;
+}
+
+.select-activity__items_opened {
+  position: absolute;
+  top: 43px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14);
+  background-color: var(--color-background);
+  border-radius: 0 0 30px 30px;
+  padding: 0 20px 13px;
+  box-sizing: border-box;
+}
+
+.select-activity__item {
+  width: 100%;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.select-activity__item:first-of-type {
+  padding-top: 0;
+}
+
+.select-activity__icon {
+  background-color: transparent;
+  cursor: pointer;
+  border:none;
+  outline: none;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  width: 24px;
+  height: 22px;
+  background-image:url('../images/arrow-select.svg');
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.select-activity__icon_type_opened {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 830px) {
+  .select-activity {
+    height: 40px;
+    padding: 10px 20px 13px;
+    margin-bottom: 10px;
+  }
+
+  .select-activity__icon {
+    top: 8px;
+  }
+}

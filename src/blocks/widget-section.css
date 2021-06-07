@@ -34,9 +34,8 @@
 .widget-section__tag {
   background-color: var(--color-background);
   display: inline-block;
-  text-transform: uppercase;
-  padding: 2px 7px;
-  border-radius: 15px;
+  opacity: 1;
+  color: var(--color-dark-grey);
 }
 
 .widget-section__caption {

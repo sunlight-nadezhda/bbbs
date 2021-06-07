@@ -29,10 +29,15 @@
                 >Вопросы</a
               >
             </li>
-            <li class="header__menu-link">
-              <a class="menu-text" href="./read-and-view.html" target="_self"
-                >Читать и смотреть</a
-              >
+            <li class="header__menu-link header__menu-link_type_read-view">
+              <a class="menu-text" href="./read-and-view.html" target="_self">Читать и смотреть</a>
+              <div class="header__read-view-container">
+                <a class="clickable-element clickable-element_place_header" href="./guide.html" target="_self">Справочник</a>
+                <a class="clickable-element clickable-element_place_header" href="./videos.html" target="_self">Видео</a>
+                <a class="clickable-element clickable-element_place_header" href="./articles.html" target="_self">Статьи</a>
+                <a class="clickable-element clickable-element_place_header" href="./films.html" target="_self">Фильмы</a>
+                <a class="clickable-element clickable-element_place_header" href="./books.html" target="_self">Книги</a>
+              </div>
             </li>
             <li class="header__menu-link">
               <a class="menu-text" href="./children-rights.html" target="_self"
@@ -121,12 +126,12 @@
       <a href="index.html" class="about-page__logo" target="_self"></a>
 
       <section class="block-article block-article_type_about-page" aria-label="Статья Об организации">
-        <article
+        <div
           class="card-article card-article_color_yellow about-page__card-article"
         >
           <h2 class="title about-page__card-article_title">Об организации</h2>
-        </article>
-        <div class="description-scroll description-scroll_place_about-page">
+      </div>
+        <article class="description-scroll description-scroll_place_about-page">
           <div
             class="description-scroll__container description-scroll__container_place_about-page"
           >
@@ -157,11 +162,11 @@
               о жизни, адаптироваться и полноценно участвовать в жизни общества.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
       <div class="about-page__call-container">
-        <h2 class="subtitle about-page__call-text">
+        <h2 class="subsubtitle about-page__call-text">
           Мы хотим, чтобы наставник был у каждого ребенка, который в нем
           нуждается
         </h2>
@@ -173,11 +178,11 @@
             Пожертвования
           </h2>
           <div class="text-card__container">
-            <div class="description text-card__description">
+            <article class="description text-card__description">
               Деньги пойдут на оплату работы кураторов программы
               (профессиональные психологи/социальные работники), которые
               поддерживают дружбу между ребенком и наставником.
-            </div>
+            </article>
             <a
               class="clickable-element text-card__clickable-element"
               href=""
@@ -191,13 +196,13 @@
             Наставничество
           </h2>
           <div class="text-card__container">
-            <div class="description text-card__description">
+            <article class="description text-card__description">
               Наставник «Старшие Братья Старшие Сестры» — значимый взрослый,
               который становится для ребенка старшим другом, ролевой моделью,
               принимает своего «Младшего» таким, какой он есть. «Старший»
               открывает для ребенка дверь в большой мир и дарит ему надежду на
               более счастливое и успешное будущее.
-            </div>
+            </article>
             <a
               class="clickable-element text-card__clickable-element"
               href=""
@@ -211,13 +216,13 @@
             Партнерство
           </h2>
           <div class="text-card__container text-card__description">
-            <div class="description">
+            <article class="description">
               Компании поддерживают нас не только деньгами, но и делами. Мы
               собрали все возможные способы поддержки и сотрудничества:
               профессиональная помощь Pro Bono, организационная помощь,
               корпоративное волонтерство, мастер-классы, лекции, учебные
               программы
-            </div>
+            </article>
             <a
               class="clickable-element text-card__clickable-element"
               href=""

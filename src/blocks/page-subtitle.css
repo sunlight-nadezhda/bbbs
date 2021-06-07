@@ -1,0 +1,31 @@
+.page-subtitle {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Proto-Grotesk-Ligth-Web", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 1.3;
+  color: #1a1a1a;
+  max-width: 1170px;
+}
+
+@media screen and (max-width: 1441px) {
+  .page-subtitle {
+    max-width: 970px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .page-subtitle {
+    max-width: 767px;
+    font-size: 19px;
+    line-height: 1.21;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .page-subtitle {
+    max-width: 100%;
+  }
+}
