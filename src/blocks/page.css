@@ -27,11 +27,6 @@
   box-sizing: border-box;
 }
 
-.page__container_type_read-view {
-  padding-left: 135px;
-  padding-right: 135px;
-}
-
 @media screen and (max-width: 1480px) {
   .page__container {
     padding-left: 135px;

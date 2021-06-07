@@ -93,11 +93,11 @@ module.exports = {
       filename: 'read-and-view.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/questions.html',
+      template: './src/guide.html',
       filename: 'guide.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/questions.html',
+      template: './src/articles.html',
       filename: 'videos.html'
     }),
     new HtmlWebpackPlugin({
@@ -105,11 +105,11 @@ module.exports = {
       filename: 'articles.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/questions.html',
+      template: './src/films.html',
       filename: 'films.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/questions.html',
+      template: './src/books.html',
       filename: 'books.html'
     }),
     new CleanWebpackPlugin(),

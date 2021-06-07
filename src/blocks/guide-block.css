@@ -2,8 +2,8 @@
 }
 
 .guide-block__image {
-  width: 100%;
-  height: 100%;
+  width: 420px;
+  height: 420px;
   object-fit: cover;
   object-position: center;
   border-radius: 3px;
@@ -22,6 +22,27 @@
   text-align: center;
   padding-top: 20px;
   color: #1a1a1a;
+  max-width: 420px;
+}
+
+@media screen and (max-width: 1441px) {
+  .guide-block__image {
+    width: 370px;
+    height: 370px;
+  }
+  .guide-block__title {
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .guide-block__image {
+    width: 290px;
+    height: 290px;
+  }
+  .guide-block__title {
+    max-width: 290px;
+  }
 }
 
 @media screen and (max-width: 860px) {
